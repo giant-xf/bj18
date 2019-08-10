@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<script type="text/javascript " src='js/jquery-1.12.4.min.js'></script>
+	<script type="text/javascript">
+		$(function(){
+
+			/*
+			//绑定单个事件
+			$('#btn1').click(function(){
+				alert('click');
+			})*/
+
+			/*
+			//同时绑定两个事件
+			$('#btn1').bind('mouseenter click',function(){
+
+				alert('click');
+
+				//取消某个事件
+				$('#btn1').unbind('mouseenter');
+			})*/
+			
+
+			$('#btn1').bind('mouseenter click btn1',function(){
+
+				alert('click');
+			})
+
+			//将某个事件绑定在某个事件上面
+			$('#btn2').bind('click',function(){
+
+				//直接触发自定义事件，也可以触发原生事件
+				$('#btn1').trigger('btn1')
+			})
+
+			
+			
+
+		});
+		
+	</script>
+
+</head>
+<body>
+	<input type="button" name="" value="按钮1" id="btn1">
+	<input type="button" name="" value="按钮2" id="btn2">
+</body>
+</html>

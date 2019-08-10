@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>登入页面</title>
+    <script src="/static/js/jquery-1.12.4.min.js"></script>
+    <style>
+        #error,#error1{
+            display: none;
+            color: red;
+        }
+    </style>
+    <script>
+        $(function () {
+            $('#change').css('cursor', 'pointer').click(function () {
+                this.src =$('#change').attr('src')+'?'+Math.random()
+            });
+
+            //给某个id绑定src或alt属性时用attr绑定
+            $('#change1').css('cursor', 'pointer').click(function () {
+                $('#change').attr('src', $('#change').attr('src')+'?'+Math.random())
+            });
+
+            $('#btnLogin').click(function () {
+                 //获取用户名和密码,验证码
+                username = $('#username').val();
+                password = $('#password').val();
+                verifycode = $('#verifycode').val();
+                $.post('/login_check',{csrfmiddlewaretoken: '{{ csrf_token }}' ,'username':username,'password':password,'verifycode':verifycode},function (data) {
+                    if(data.res ==0){
+                        $('#error').show().html('验证码输入有误')
+                    }
+                    if (data.res==1){
+                        $('#error').hide();
+                        $('#error1').show().html('账号密码输入有误')
+                    }
+                    if(data.res==2) {
+                        location.href = '/change_pwd'
+                    }
+                })
+            })
+        })
+
+    </script>
+</head>
+<body>
+<!--<form method="post" action="/login_check">-->
+    <!--{% csrf_token %}-->
+    用户名:<input type="text" id="username" value="{{username}}"><br>
+    密码: <input type="password" id="password"> <br>
+    <div id="error1"></div><br>
+    <button  id="change1">看不清,点击刷新</button>
+    <img src="/verify_code" alt="" id="change" title="看不清,点击刷新">
+    <input type="text" id="verifycode"> <br>
+    <div id="error"></div><br>
+    <input type="checkbox" name="remember">记住用户名 <br>
+    <!--<input type="submit" value="登入" id="btnLogin">-->
+    <input type="button" value="登入" id="btnLogin">
+<!--</form>-->
+</body>
+</html>

@@ -1,0 +1,1097 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="32beecd7-376a-42fc-907a-8033c91c4bb5" name="Default" comment="" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CoverageDataManager">
+    <SUITE FILE_PATH="coverage/one$Hellopython.coverage" NAME="Hellopython Coverage Results" MODIFIED="1528990116960" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="C:/a" />
+    <SUITE FILE_PATH="coverage/1_01_$1_02_1_property.coverage" NAME="1.02.1-私有化及私有属性property Coverage Results" MODIFIED="1532092350737" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../1.02-小白进阶篇之核心编程" />
+    <SUITE FILE_PATH="coverage/1_01_$1_02_6_.coverage" NAME="1.02.6-闭包装饰器和类装饰器 Coverage Results" MODIFIED="1532093344882" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../1.02-小白进阶篇之核心编程" />
+    <SUITE FILE_PATH="coverage/1_01_$2_03_1_.coverage" NAME="2.03.1- Coverage Results" MODIFIED="1532440640624" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../2.0-小白进阶篇/2.03-网络编程/网络概述丶socket(套接字)" />
+    <SUITE FILE_PATH="coverage/1_01_$Unittests_in_1_02_Demo_py.coverage" NAME="Unittests in 1.02-Demo.py Coverage Results" MODIFIED="1531909003605" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
+    <SUITE FILE_PATH="coverage/1_01_$1_02_7_python.coverage" NAME="1.02.7-python动态添加属性和方法，作用域 Coverage Results" MODIFIED="1531987381207" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../1.02-小白进阶篇之核心编程" />
+    <SUITE FILE_PATH="coverage/1_01_$1_01_6_.coverage" NAME="1.01.6-类的继承和重写再调用 Coverage Results" MODIFIED="1531482960496" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/1_01_$2_02_8_.coverage" NAME="2.02.8-生产者消费者模式 Coverage Results" MODIFIED="1532349117610" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../2.0-小白进阶篇/2.02-Linux系统编程/线程" />
+    <SUITE FILE_PATH="coverage/1_01_$1_01_07.coverage" NAME="1.01.07继承丶私有方法丶私有属性 Coverage Results" MODIFIED="1531548663734" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/1_01_$Unittests_in_1_02_5__py.coverage" NAME="Unittests in 1.02.5-闭包.py Coverage Results" MODIFIED="1531924791048" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
+    <SUITE FILE_PATH="coverage/1_01_$2_02_3_gevent__.coverage" NAME="2.02.3-gevent协程(升级版) Coverage Results" MODIFIED="1533379207902" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../2.0-小白进阶篇/2.02-Linux系统编程/协程" />
+    <SUITE FILE_PATH="coverage/1_01_$2_04_web_HTTP_.coverage" NAME="2.04.web服务器(HTTP) Coverage Results" MODIFIED="1533449474215" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../2.0-小白进阶篇/2.04-案例web服务器" />
+    <SUITE FILE_PATH="coverage/1_01_$2_05_.coverage" NAME="2.05.面试题 Coverage Results" MODIFIED="1536563341172" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../2.0-小白进阶篇/2.05-正则表达式" />
+    <SUITE FILE_PATH="coverage/1_01_$1_02_9__GC_.coverage" NAME="1.02.9-(GC)垃圾回收机制 Coverage Results" MODIFIED="1532070685990" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../1.02-小白进阶篇之核心编程" />
+    <SUITE FILE_PATH="coverage/one$Deamo.coverage" NAME="Deamo Coverage Results" MODIFIED="1528293442321" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/1_01_$1_02_1_is__.coverage" NAME="1.02.1-深浅拷贝丶is，==用法 Coverage Results" MODIFIED="1531820752703" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../1.02-小白进阶篇之核心编程" />
+    <SUITE FILE_PATH="coverage/1_01_$1_02_3_.coverage" NAME="1.02.3-生成器应用于协程 Coverage Results" MODIFIED="1532092602917" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../1.02-小白进阶篇之核心编程" />
+    <SUITE FILE_PATH="coverage/1_01_$2_02_4____.coverage" NAME="2.02.4-进程[习题] 拷贝大量文件 Coverage Results" MODIFIED="1536568272959" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../2.0-小白进阶篇/2.02-Linux系统编程/进程" />
+    <SUITE FILE_PATH="coverage/1_01_$2_02_5_.coverage" NAME="2.02.5-进程与线程的区别以及线程的封装 Coverage Results" MODIFIED="1532406773818" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../2.0-小白进阶篇/2.02-Linux系统编程/线程" />
+    <SUITE FILE_PATH="coverage/1_01_$1_01_3_.coverage" NAME="1.01.3-转盘游戏 Coverage Results" MODIFIED="1541334248143" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/1_01_$1_01_10_.coverage" NAME="1.01.10-单例模式丶保证初始化一次 Coverage Results" MODIFIED="1532175828017" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/1_01_$2_02_1_Process.coverage" NAME="2.02.1-进程之Process模块 Coverage Results" MODIFIED="1532405553045" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../2.0-小白进阶篇/2.02-Linux系统编程/进程" />
+    <SUITE FILE_PATH="coverage/1_01_$Unittests_in_2_02_3_gevent___py.coverage" NAME="Unittests in 2.02.3-gevent协程(升级版).py Coverage Results" MODIFIED="1533378964165" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
+    <SUITE FILE_PATH="coverage/1_01_$1_02_7_types_MethodType__slots__.coverage" NAME="1.02.7-types.MethodType动态添加属性和方法，作用域，__slots__ Coverage Results" MODIFIED="1532093462154" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../1.02-小白进阶篇之核心编程" />
+    <SUITE FILE_PATH="coverage/1_01_$test__.coverage" NAME="test-扩展-飞机爆炸 Coverage Results" MODIFIED="1531803179272" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="E:/Python全套教程/新建文件夹/Python基础班/Python基础班资料/01-基础班-第14天{飞机大战-下}/4-代码/飞机大战" />
+    <SUITE FILE_PATH="coverage/one$__2_.coverage" NAME="记事本源码 (2) Coverage Results" MODIFIED="1528902205646" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$USER_HOME$/Desktop/Python项目/记事本" />
+    <SUITE FILE_PATH="coverage/1_01_$2_03_5_tftp.coverage" NAME="2.03.5-tftp上传器 Coverage Results" MODIFIED="1532946362101" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../2.0-小白进阶篇/2.03-网络编程/02-tftp文件下载器" />
+    <SUITE FILE_PATH="coverage/1_01_$2_02_3___.coverage" NAME="2.02.3-进程之间通信(队列通信) Coverage Results" MODIFIED="1532405958161" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../2.0-小白进阶篇/2.02-Linux系统编程/进程" />
+    <SUITE FILE_PATH="coverage/1_01_$.coverage" NAME="匹配网址和找单词练习 Coverage Results" MODIFIED="1541395845463" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../2.0-小白进阶篇/2.05-正则表达式" />
+    <SUITE FILE_PATH="coverage/1_01_$1_01_12_.coverage" NAME="1.01.12-老王开枪 Coverage Results" MODIFIED="1531704899601" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/1_01_$Unittests_in_1_02_1_property_py.coverage" NAME="Unittests in 1.02.1-私有化及私有属性property.py Coverage Results" MODIFIED="1531908847351" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
+    <SUITE FILE_PATH="coverage/one$Deamo1.coverage" NAME="Deamo1 Coverage Results" MODIFIED="1529410424092" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/1_01_$2_03_4_tftp.coverage" NAME="2.03.4-tftp下载器 Coverage Results" MODIFIED="1532875262558" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../2.0-小白进阶篇/2.03-网络编程/02-tftp文件下载器" />
+    <SUITE FILE_PATH="coverage/1_01_$2_02_7___.coverage" NAME="2.02.7-死锁丶同步(有序)执行 Coverage Results" MODIFIED="1532326331167" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../2.0-小白进阶篇/2.02-Linux系统编程/线程" />
+    <SUITE FILE_PATH="coverage/one$girlgame__2_.coverage" NAME="girlgame (2) Coverage Results" MODIFIED="1529484268584" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$USER_HOME$/Desktop/dist" />
+    <SUITE FILE_PATH="coverage/1_01_$Unittests_in_1_02_3__py.coverage" NAME="Unittests in 1.02.3-生成器应用于协程.py Coverage Results" MODIFIED="1531924940067" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
+    <SUITE FILE_PATH="coverage/1_01_$1_02_Demo.coverage" NAME="1.02-Demo Coverage Results" MODIFIED="1532159222194" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../2.0-小白进阶篇/1.02-Linux系统编程" />
+    <SUITE FILE_PATH="coverage/1_01_$2_03_10__.coverage" NAME="2.03.10-单进程服务器-非堵塞模式 Coverage Results" MODIFIED="1533369953113" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../2.0-小白进阶篇/2.03-网络编程/03-tcp(传输控制协议)丶网络访问的过程" />
+    <SUITE FILE_PATH="coverage/1_01_$1_01_4_.coverage" NAME="1.01.4-烤地瓜（类的应用） Coverage Results" MODIFIED="1531470823655" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/1_01_$2_03_1_socket.coverage" NAME="2.03.1-socket（套接口） Coverage Results" MODIFIED="1532611527206" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../2.0-小白进阶篇/2.03-网络编程/网络概述丶socket(套接字)" />
+    <SUITE FILE_PATH="coverage/1_01_$1_02_7_types_MethodType.coverage" NAME="1.02.7-types.MethodType动态添加属性和方法，作用域 Coverage Results" MODIFIED="1531990207911" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../1.02-小白进阶篇之核心编程" />
+    <SUITE FILE_PATH="coverage/1_01_$1_02_Deom.coverage" NAME="1.02-Deom Coverage Results" MODIFIED="1532143930265" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../1.02-小白进阶篇之核心编程" />
+    <SUITE FILE_PATH="coverage/1_01_$1_02_4_.coverage" NAME="1.02.4-迭代器 Coverage Results" MODIFIED="1531965947547" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../1.02-小白进阶篇之核心编程" />
+    <SUITE FILE_PATH="coverage/1_01_$2_02_1_.coverage" NAME="2.02.1-生成器完成协程 Coverage Results" MODIFIED="1533378875447" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../2.0-小白进阶篇/2.02-Linux系统编程/协程" />
+    <SUITE FILE_PATH="coverage/1_01_$1_01_.coverage" NAME="1.01-列表移数陷阱 Coverage Results" MODIFIED="1531733433546" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/one$QiuDemo.coverage" NAME="QiuDemo Coverage Results" MODIFIED="1527926779230" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$USER_HOME$/Desktop/Python项目/接小球游戏学习资料" />
+    <SUITE FILE_PATH="coverage/one$666.coverage" NAME="666 Coverage Results" MODIFIED="1529412588393" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$USER_HOME$/Desktop" />
+    <SUITE FILE_PATH="coverage/1_01_$2_05_01.coverage" NAME="2.05.01 Coverage Results" MODIFIED="1541164523392" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../2.0-小白进阶篇/2.05-正则表达式" />
+    <SUITE FILE_PATH="coverage/one$girlgame__1_.coverage" NAME="girlgame (1) Coverage Results" MODIFIED="1529496361558" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="C:/a" />
+    <SUITE FILE_PATH="coverage/1_01_$1_02_8_.coverage" NAME="1.02.8- Coverage Results" MODIFIED="1532009039981" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../1.02-小白进阶篇之核心编程" />
+    <SUITE FILE_PATH="coverage/1_01_$Unittests_in_2_02_9____py.coverage" NAME="Unittests in 2.02.9-简单理解异步(以后用的居多).py Coverage Results" MODIFIED="1532353032575" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
+    <SUITE FILE_PATH="coverage/1_01_$1_01_1_.coverage" NAME="1.01.1-小球游戏 Coverage Results" MODIFIED="1531534727653" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/1_01_$2_05_04_.coverage" NAME="2.05.04-使用替换将数据加一 Coverage Results" MODIFIED="1541335958533" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../2.0-小白进阶篇/2.05-正则表达式" />
+    <SUITE FILE_PATH="coverage/1_01_$1_01_8_.coverage" NAME="1.01.8-多态丶类实例属性丶类实例方法丶静态方法 Coverage Results" MODIFIED="1531562230991" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/1_01_$2_02_9___.coverage" NAME="2.02.9-简单理解异步(以后用的居多) Coverage Results" MODIFIED="1532353276967" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../2.0-小白进阶篇/2.02-Linux系统编程/线程" />
+    <SUITE FILE_PATH="coverage/one$__1_.coverage" NAME="记事本源码 (1) Coverage Results" MODIFIED="1528119825575" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$USER_HOME$/Desktop" />
+    <SUITE FILE_PATH="coverage/one$girlgame.coverage" NAME="girlgame Coverage Results" MODIFIED="1529481352944" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/1_01_$Unittests_in_2_02_6__py.coverage" NAME="Unittests in 2.02.6-多线程共享全局变量及互斥锁.py Coverage Results" MODIFIED="1532320308316" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
+    <SUITE FILE_PATH="coverage/1_01_$tftp_download.coverage" NAME="tftp-download Coverage Results" MODIFIED="1532869488266" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="E:/Python全套教程/Python最新就业班/第2章 python核心编程/第3节 网络编程(7.24五天)/02.网络编程-tftp文件下载器/源码" />
+    <SUITE FILE_PATH="coverage/1_01_$1_01_13_.coverage" NAME="1.01.13-飞机大战 Coverage Results" MODIFIED="1541334282093" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/one$shop.coverage" NAME="shop Coverage Results" MODIFIED="1530191265715" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="C:/a" />
+    <SUITE FILE_PATH="coverage/1_01_$1_01_5_.coverage" NAME="1.01.5-存放家具 Coverage Results" MODIFIED="1531540870313" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/1_01_$1_01_3_1_.coverage" NAME="1.01.3.1-带图片的转盘游戏 Coverage Results" MODIFIED="1536581900909" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/one$Hello_python.coverage" NAME="Hello python Coverage Results" MODIFIED="1528985360402" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/1_01_$1_02_10_.coverage" NAME="1.02.10-内建函数丶内建属性 Coverage Results" MODIFIED="1532093746432" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../1.02-小白进阶篇之核心编程" />
+    <SUITE FILE_PATH="coverage/1_01_$1_01_2__.coverage" NAME="1.01.2-名片管理系统-文件完美版 Coverage Results" MODIFIED="1531713133548" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/1_01_$2_02_7_.coverage" NAME="2.02.7-死锁 Coverage Results" MODIFIED="1532323392147" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../2.0-小白进阶篇/2.02-Linux系统编程/线程" />
+    <SUITE FILE_PATH="coverage/1_01_$__init__.coverage" NAME="__init__ Coverage Results" MODIFIED="1531736559580" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/1_01_$2_02_Demo.coverage" NAME="2.02-Demo Coverage Results" MODIFIED="1532161652850" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../2.0-小白进阶篇/2.02-Linux系统编程" />
+    <SUITE FILE_PATH="coverage/1_01_$1_02_5_.coverage" NAME="1.02.5-闭包 Coverage Results" MODIFIED="1531925022346" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../1.02-小白进阶篇之核心编程" />
+    <SUITE FILE_PATH="coverage/1_01_$1_02_8___slots__.coverage" NAME="1.02.8-__slots__ Coverage Results" MODIFIED="1531990462722" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../1.02-小白进阶篇之核心编程" />
+    <SUITE FILE_PATH="coverage/1_01_$2_05_01_0_99.coverage" NAME="2.05.01-匹配0-99数字 Coverage Results" MODIFIED="1541248056781" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../2.0-小白进阶篇/2.05-正则表达式" />
+    <SUITE FILE_PATH="coverage/1_01_$1_01_2_.coverage" NAME="1.01.2-名片管理系统 Coverage Results" MODIFIED="1531293143309" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/1_01_$2_02_2_Pool.coverage" NAME="2.02.2-进程之Pool进程池模块 Coverage Results" MODIFIED="1532233512207" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../2.0-小白进阶篇/2.02-Linux系统编程" />
+    <SUITE FILE_PATH="coverage/1_01_$2_02_6_.coverage" NAME="2.02.6-多线程共享全局变量及互斥锁 Coverage Results" MODIFIED="1532352182941" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../2.0-小白进阶篇/2.02-Linux系统编程/线程" />
+    <SUITE FILE_PATH="coverage/one$6_.coverage" NAME="6-名片管理系统 Coverage Results" MODIFIED="1531135375866" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$USER_HOME$/Desktop" />
+    <SUITE FILE_PATH="coverage/1_01_$2_05_02_rematch163QQ126.coverage" NAME="2.05.02-re模块中match匹配163、QQ、126邮箱 Coverage Results" MODIFIED="1541331863892" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../2.0-小白进阶篇/2.05-正则表达式" />
+    <SUITE FILE_PATH="coverage/1_01_$Demo.coverage" NAME="Demo Coverage Results" MODIFIED="1533378516734" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../2.0-小白进阶篇/2.03-网络编程" />
+    <SUITE FILE_PATH="coverage/1_01_$1_01_9_.coverage" NAME="1.01.9-简单的工厂模式 Coverage Results" MODIFIED="1531575943729" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/one$.coverage" NAME="转盘源码 Coverage Results" MODIFIED="1529334959767" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="C:/a" />
+  </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_TABLE_DETAILS" value="true" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+  </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
+  <component name="FavoritesManager">
+    <favorites_list name="one" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="2.05.01-re模块中match匹配0-99数字.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../2.0-小白进阶篇/2.05-正则表达式/2.05.01-re模块中match匹配0-99数字.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="418">
+              <caret line="22" column="0" lean-forward="false" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="2.05.03-match-search-findall方法.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../2.0-小白进阶篇/2.05-正则表达式/2.05.03-match-search-findall方法.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="2.05.04-使用替换将数据加一.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../2.0-小白进阶篇/2.05-正则表达式/2.05.04-使用替换将数据加一.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="228">
+              <caret line="12" column="10" lean-forward="false" selection-start-line="12" selection-start-column="10" selection-end-line="12" selection-end-column="10" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="2.05.05-sub将数据进行替换.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../2.0-小白进阶篇/2.05-正则表达式/2.05.05-sub将数据进行替换.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="532">
+              <caret line="28" column="0" lean-forward="false" selection-start-line="28" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="2.05.02-re模块中match匹配163、QQ、126邮箱.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../2.0-小白进阶篇/2.05-正则表达式/2.05.02-re模块中match匹配163、QQ、126邮箱.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="190">
+              <caret line="10" column="0" lean-forward="false" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="知识点.txt" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../2.0-小白进阶篇/2.05-正则表达式/知识点.txt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="3154">
+              <caret line="166" column="0" lean-forward="false" selection-start-line="166" selection-start-column="0" selection-end-line="166" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="匹配网址和找单词练习.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/../2.0-小白进阶篇/2.05-正则表达式/匹配网址和找单词练习.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="209">
+              <caret line="11" column="0" lean-forward="false" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="2.05.06-贪婪模式和非贪婪模式.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../2.0-小白进阶篇/2.05-正则表达式/2.05.06-贪婪模式和非贪婪模式.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="2.05.面试题.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../2.0-小白进阶篇/2.05-正则表达式/2.05.面试题.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="285">
+              <caret line="15" column="0" lean-forward="false" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>Money</find>
+      <find>test</find>
+      <find>server</find>
+      <find>serverS</find>
+      <find>serverSo</find>
+      <find>serverSoc</find>
+      <find>serverSock</find>
+      <find>serverSocke</find>
+      <find>serverSocket</find>
+    </findStrings>
+    <replaceStrings>
+      <replace />
+    </replaceStrings>
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/../2.0-小白进阶篇/2.02-Linux系统编程/线程/2.02.5-线程的封装以及进程与线程的区别.py" />
+        <option value="$PROJECT_DIR$/../2.0-小白进阶篇/2.02-Linux系统编程/线程/2.02.7-死锁.py" />
+        <option value="$PROJECT_DIR$/../2.0-小白进阶篇/2.02-Linux系统编程/线程/同步和异步，阻塞和非阻塞.txt" />
+        <option value="$PROJECT_DIR$/../2.0-小白进阶篇/2.02-Linux系统编程/线程/2.02.7-死锁丶同步(有序)执行.py" />
+        <option value="$PROJECT_DIR$/../2.0-小白进阶篇/2.02-Linux系统编程/线程/2.02.8-生产者消费者模式.py" />
+        <option value="$PROJECT_DIR$/../2.0-小白进阶篇/2.02-Linux系统编程/线程/2.02.8-生产者消费者模式（进程丶线程）.py" />
+        <option value="$PROJECT_DIR$/../2.0-小白进阶篇/2.02-Linux系统编程/线程/2.02.6-多线程共享全局变量及互斥锁.py" />
+        <option value="$PROJECT_DIR$/../2.0-小白进阶篇/2.02-Linux系统编程/线程/2.02.9-简单理解异步(以后用的居多).py" />
+        <option value="$PROJECT_DIR$/../2.0-小白进阶篇/2.02-Linux系统编程/进程/2.02.1-进程之Process模块.py" />
+        <option value="$PROJECT_DIR$/../2.0-小白进阶篇/2.02-Linux系统编程/进程/2.02.3-进程之间通信(队列通信).py" />
+        <option value="$PROJECT_DIR$/../2.0-小白进阶篇/2.02-Linux系统编程/线程/2.02.5-进程与线程的区别以及线程的封装.py" />
+        <option value="$PROJECT_DIR$/../2.0-小白进阶篇/2.03-网络编程/网络概述丶socket/TCP IP协议丶端口丶IP概述" />
+        <option value="$PROJECT_DIR$/../2.0-小白进阶篇/2.03-网络编程/网络概述丶socket(套接字)/2.03.1-.py" />
+        <option value="$PROJECT_DIR$/../2.0-小白进阶篇/2.03-网络编程/网络概述丶socket(套接字)/2.03.1-socket（套接口）.py" />
+        <option value="$PROJECT_DIR$/../2.0-小白进阶篇/2.03-网络编程/网络概述丶socket(套接字)/TCP IP协议丶端口丶IP概述" />
+        <option value="$PROJECT_DIR$/../2.0-小白进阶篇/2.03-网络编程/网络概述丶socket(套接字)/2.03.2-模拟QQ聊天-多线程.py" />
+        <option value="$PROJECT_DIR$/../2.0-小白进阶篇/2.03-网络编程/网络概述丶socket(套接字)/TCP IP协议丶端口丶IP概述.txt" />
+        <option value="E:/Python全套教程/Python最新就业班/第2章 python核心编程/第3节 网络编程(7.24五天)/02.网络编程-tftp文件下载器/源码/tftp-download.py" />
+        <option value="$PROJECT_DIR$/../2.0-小白进阶篇/2.03-网络编程/02-tftp文件下载器/2.03.4-tftp下载器.py" />
+        <option value="$PROJECT_DIR$/../2.0-小白进阶篇/2.03-网络编程/02-tftp文件下载器/上传例子.py" />
+        <option value="$PROJECT_DIR$/../2.0-小白进阶篇/2.03-网络编程/02-tftp文件下载器/2.03.5-tftp上传器.py" />
+        <option value="$PROJECT_DIR$/../2.0-小白进阶篇/2.03-网络编程/01-网络概述丶socket(套接字)/2.03.2-(udp网络通信)模拟QQ聊天-多线程.py" />
+        <option value="E:/Python全套教程/Python最新就业班/第2章 python核心编程/第3节 网络编程(7.24五天)/03.网络编程-网络通信过程/源码/01-tcp服务器.py" />
+        <option value="$PROJECT_DIR$/../2.0-小白进阶篇/2.03-网络编程/02-udp(用户数据包协议)之tftp文件下载器/udp特点" />
+        <option value="$PROJECT_DIR$/../2.0-小白进阶篇/2.03-网络编程/02-udp(用户数据包协议)之tftp文件下载器/udp特点以及广播" />
+        <option value="$PROJECT_DIR$/../2.0-小白进阶篇/2.03-网络编程/02-udp(用户数据包协议)之tftp文件下载器/2.03.6-udp用于广播.py" />
+        <option value="$PROJECT_DIR$/../2.0-小白进阶篇/2.03-网络编程/03-tcp(传输控制协议)/2.03.6-TCP服务器丶客户端.py" />
+        <option value="$PROJECT_DIR$/../2.0-小白进阶篇/2.03-网络编程/01-网络概述丶socket(套接字)/TCP IP协议丶端口丶IP概述.txt" />
+        <option value="$PROJECT_DIR$/../2.0-小白进阶篇/2.03-网络编程/03-tcp(传输控制协议)丶网络访问的过程/2.03.7-访问百度的过程.py" />
+        <option value="$PROJECT_DIR$/../2.0-小白进阶篇/2.03-网络编程/03-tcp(传输控制协议)丶网络访问的过程/2.03.7-访问百度的过程.txt" />
+        <option value="$PROJECT_DIR$/../2.0-小白进阶篇/2.03-网络编程/Demo.py" />
+        <option value="$PROJECT_DIR$/../2.0-小白进阶篇/2.01-核心编程/1.01.3-生成器应用于协程.py" />
+        <option value="$PROJECT_DIR$/../2.0-小白进阶篇/2.02-Linux系统编程/协程/2.02.1-生成器完成协程.py" />
+        <option value="$PROJECT_DIR$/../2.0-小白进阶篇/2.02-Linux系统编程/协程/2.02.2-greelet协程.py" />
+        <option value="$PROJECT_DIR$/../2.0-小白进阶篇/2.02-Linux系统编程/协程/2.02.3-gevent协程(升级版).py" />
+        <option value="$PROJECT_DIR$/../2.0-小白进阶篇/2.03-网络编程/03-tcp(传输控制协议)丶网络访问的过程/2.04.13-gevent版TCP服务器.py" />
+        <option value="$PROJECT_DIR$/../2.0-小白进阶篇/2.04-案例web服务器/2.04.web服务器.py" />
+        <option value="$PROJECT_DIR$/../2.0-小白进阶篇/2.04-案例web服务器/2.04.web服务器(HTTP).py" />
+        <option value="$PROJECT_DIR$/../2.0-小白进阶篇/2.03-网络编程/03-tcp(传输控制协议)丶网络访问的过程/2.03.6-TCP服务器丶客户端.py" />
+        <option value="$PROJECT_DIR$/../2.0-小白进阶篇/2.05-正则表达式/2.05.面试题.py" />
+        <option value="$PROJECT_DIR$/../2.0-小白进阶篇/2.05-正则表达式/2.05.01.py" />
+        <option value="$PROJECT_DIR$/../2.0-小白进阶篇/2.05-正则表达式/example.txt" />
+        <option value="$PROJECT_DIR$/../2.0-小白进阶篇/2.05-正则表达式/2.05.01-匹配0-99数字.py" />
+        <option value="$PROJECT_DIR$/../2.0-小白进阶篇/2.05-正则表达式/2.05.02-匹配163、QQ、126邮箱.py" />
+        <option value="$PROJECT_DIR$/../2.0-小白进阶篇/2.05-正则表达式/2.05.02-re模块中match匹配163、QQ、126邮箱.py" />
+        <option value="$PROJECT_DIR$/../2.0-小白进阶篇/2.05-正则表达式/2.05.04-使用替换将数据加一.py" />
+        <option value="$PROJECT_DIR$/../2.0-小白进阶篇/2.05-正则表达式/例子.py" />
+        <option value="$PROJECT_DIR$/../2.0-小白进阶篇/2.05-正则表达式/2.05.03-match-search-findall方法.py" />
+        <option value="$PROJECT_DIR$/../2.0-小白进阶篇/2.05-正则表达式/贪婪模式和非贪婪模式.py" />
+        <option value="$PROJECT_DIR$/../2.0-小白进阶篇/2.05-正则表达式/知识点.txt" />
+        <option value="$PROJECT_DIR$/../2.0-小白进阶篇/2.05-正则表达式/匹配网址和找单词练习.py" />
+      </list>
+    </option>
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+    <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="ProjectFrameBounds">
+    <option name="x" value="54" />
+    <option name="y" value="-8" />
+    <option name="width" value="1320" />
+    <option name="height" value="784" />
+  </component>
+  <component name="ProjectView">
+    <navigator currentView="ProjectPane" proportions="" version="1">
+      <flattenPackages />
+      <showMembers />
+      <showModules />
+      <showLibraryContents />
+      <hideEmptyPackages />
+      <abbreviatePackageNames />
+      <autoscrollToSource />
+      <autoscrollFromSource />
+      <sortByType />
+      <manualOrder />
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="ProjectPane">
+        <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="1.01-小白成长记" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="2.0-小白进阶篇" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
+      <pane id="Scope" />
+      <pane id="Scratches" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../2.0-小白进阶篇" />
+    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors.Font" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Administrator\PycharmProjects\untitled\2.0-小白进阶篇\2.03-网络编程\03-tcp(传输控制协议)丶网络访问的过程" />
+      <recent name="C:\Users\Administrator\PycharmProjects\untitled\2.0-小白进阶篇\2.03-网络编程\02-tftp文件下载器" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Administrator\PycharmProjects\untitled\2.0-小白进阶篇\2.05-正则表达式" />
+      <recent name="C:\Users\Administrator\PycharmProjects\untitled\2.0-小白进阶篇\2.02-Linux系统编程\协程" />
+      <recent name="C:\Users\Administrator\PycharmProjects\untitled\2.0-小白进阶篇\2.03-网络编程\03-tcp(传输控制协议)" />
+      <recent name="C:\Users\Administrator\PycharmProjects\untitled\2.0-小白进阶篇\2.03-网络编程\02-tftp文件下载器" />
+      <recent name="C:\Users\Administrator\PycharmProjects\untitled\2.0-小白进阶篇\2.02-Linux系统编程\线程" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="Python.匹配网址和找单词练习">
+    <configuration default="false" name="1.01.13-飞机大战" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="one" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/1.01.13-飞机大战.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <method />
+    </configuration>
+    <configuration default="false" name="1.01.3-转盘游戏" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="one" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/1.01.3-转盘游戏.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <method />
+    </configuration>
+    <configuration default="false" name="2.05.04-使用替换将数据加一" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/../2.0-小白进阶篇/2.05-正则表达式" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="2.0-小白进阶篇" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/../2.0-小白进阶篇/2.05-正则表达式/2.05.04-使用替换将数据加一.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <method />
+    </configuration>
+    <configuration default="false" name="例子" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/../2.0-小白进阶篇/2.05-正则表达式" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="2.0-小白进阶篇" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="C:\Users\Administrator\PycharmProjects\untitled\2.0-小白进阶篇\2.05-正则表达式\2.05.05-sub将数据进行替换.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <method />
+    </configuration>
+    <configuration default="false" name="匹配网址和找单词练习" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/../2.0-小白进阶篇/2.05-正则表达式" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="2.0-小白进阶篇" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/../2.0-小白进阶篇/2.05-正则表达式/匹配网址和找单词练习.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <method />
+    </configuration>
+    <configuration default="true" type="DjangoTestsConfigurationType" factoryName="Django tests">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="one" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="TARGET" value="" />
+      <option name="SETTINGS_FILE" value="" />
+      <option name="CUSTOM_SETTINGS" value="false" />
+      <option name="USE_OPTIONS" value="false" />
+      <option name="OPTIONS" value="" />
+      <method />
+    </configuration>
+    <configuration default="true" type="JavaScriptTestRunnerJest" factoryName="Jest">
+      <node-interpreter value="project" />
+      <working-dir value="" />
+      <envs />
+      <scope-kind value="ALL" />
+      <method />
+    </configuration>
+    <configuration default="true" type="JavaScriptTestRunnerProtractor" factoryName="Protractor">
+      <config-file value="" />
+      <node-interpreter value="project" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug">
+      <method />
+    </configuration>
+    <configuration default="true" type="PyBehaveRunConfigurationType" factoryName="Behave">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="one" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="ADDITIONAL_ARGS" value="" />
+      <method />
+    </configuration>
+    <configuration default="true" type="PyLettuceRunConfigurationType" factoryName="Lettuce">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="one" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="ADDITIONAL_ARGS" value="" />
+      <method />
+    </configuration>
+    <configuration default="true" type="PythonConfigurationType" factoryName="Python">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="one" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <method />
+    </configuration>
+    <configuration default="true" type="Tox" factoryName="Tox">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <module name="one" />
+      <method />
+    </configuration>
+    <configuration default="true" type="js.build_tools.gulp" factoryName="Gulp.js">
+      <node-interpreter>project</node-interpreter>
+      <node-options />
+      <gulpfile />
+      <tasks />
+      <arguments />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="js.build_tools.npm" factoryName="npm">
+      <command value="run" />
+      <scripts />
+      <node-interpreter value="project" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="tests" factoryName="Doctests">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="one" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="CLASS_NAME" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="FOLDER_NAME" value="" />
+      <option name="TEST_TYPE" value="TEST_SCRIPT" />
+      <option name="PATTERN" value="" />
+      <option name="USE_PATTERN" value="false" />
+      <method />
+    </configuration>
+    <configuration default="true" type="tests" factoryName="Nosetests">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="one" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="_new_regexPattern" value="&quot;&quot;" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;.&quot;" />
+      <option name="_new_targetType" value="&quot;PATH&quot;" />
+      <method />
+    </configuration>
+    <configuration default="true" type="tests" factoryName="Unittests">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="one" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;.&quot;" />
+      <option name="_new_targetType" value="&quot;PATH&quot;" />
+      <method />
+    </configuration>
+    <configuration default="false" name="Unittests in 1.02.3-生成器应用于协程.py" type="tests" factoryName="Unittests" nameIsGenerated="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="one" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;$PROJECT_DIR$/../1.02-小白进阶篇之核心编程/1.02.3-生成器应用于协程.py&quot;" />
+      <option name="_new_targetType" value="&quot;PATH&quot;" />
+      <method />
+    </configuration>
+    <list size="6">
+      <item index="0" class="java.lang.String" itemvalue="Python tests.Unittests in 1.02.3-生成器应用于协程.py" />
+      <item index="1" class="java.lang.String" itemvalue="Python.1.01.13-飞机大战" />
+      <item index="2" class="java.lang.String" itemvalue="Python.1.01.3-转盘游戏" />
+      <item index="3" class="java.lang.String" itemvalue="Python.2.05.04-使用替换将数据加一" />
+      <item index="4" class="java.lang.String" itemvalue="Python.例子" />
+      <item index="5" class="java.lang.String" itemvalue="Python.匹配网址和找单词练习" />
+    </list>
+    <recent_temporary>
+      <list size="5">
+        <item index="0" class="java.lang.String" itemvalue="Python.匹配网址和找单词练习" />
+        <item index="1" class="java.lang.String" itemvalue="Python.例子" />
+        <item index="2" class="java.lang.String" itemvalue="Python.2.05.04-使用替换将数据加一" />
+        <item index="3" class="java.lang.String" itemvalue="Python.1.01.13-飞机大战" />
+        <item index="4" class="java.lang.String" itemvalue="Python.1.01.3-转盘游戏" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="ShelveChangesManager" show_recycled="false">
+    <option name="remove_strategy" value="false" />
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="32beecd7-376a-42fc-907a-8033c91c4bb5" name="Default" comment="" />
+      <created>1527864014184</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1527864014184</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="TestHistory">
+    <history-entry file="Unittests_in_1_02_5-闭包_py - 2018.07.18 at 22h 35m 30s.xml">
+      <configuration name="Unittests in 1.02.5-闭包.py" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Unittests_in_1_02_5-闭包_py - 2018.07.18 at 22h 35m 37s.xml">
+      <configuration name="Unittests in 1.02.5-闭包.py" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Unittests_in_1_02_5-闭包_py - 2018.07.18 at 22h 35m 42s.xml">
+      <configuration name="Unittests in 1.02.5-闭包.py" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Unittests_in_1_02_5-闭包_py - 2018.07.18 at 22h 35m 51s.xml">
+      <configuration name="Unittests in 1.02.5-闭包.py" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Unittests_in_1_02_5-闭包_py - 2018.07.18 at 22h 36m 41s.xml">
+      <configuration name="Unittests in 1.02.5-闭包.py" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Unittests_in_1_02_5-闭包_py - 2018.07.18 at 22h 37m 12s.xml">
+      <configuration name="Unittests in 1.02.5-闭包.py" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Unittests_in_1_02_5-闭包_py - 2018.07.18 at 22h 39m 51s.xml">
+      <configuration name="Unittests in 1.02.5-闭包.py" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Unittests_in_2_02_3-gevent协程(升级版)_py - 2018.08.04 at 18h 36m 04s.xml">
+      <configuration name="Unittests in 2.02.3-gevent协程(升级版).py" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Unittests_in_2_02_6-多线程共享全局变量及互斥锁_py - 2018.07.23 at 12h 31m 48s.xml">
+      <configuration name="Unittests in 2.02.6-多线程共享全局变量及互斥锁.py" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Unittests_in_2_02_9-简单理解异步(以后用的居多)_py - 2018.07.23 at 21h 37m 12s.xml">
+      <configuration name="Unittests in 2.02.9-简单理解异步(以后用的居多).py" configurationId="tests" />
+    </history-entry>
+  </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="54" y="-8" width="1320" height="784" extended-state="6" />
+    <layout>
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.17698413" sideWeight="0.49346405" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3251634" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.47315437" sideWeight="0.3880484" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.009077156" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.31535947" sideWeight="0.6119516" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3108108" sideWeight="0.49707174" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.15582451" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3267974" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.14447807" sideWeight="0.50653595" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39379084" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Data View" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32980332" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32843137" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+    </layout>
+    <layout-to-restore>
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3251634" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4738562" sideWeight="0.3880484" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2124183" sideWeight="0.6119516" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.34313726" sideWeight="0.49707174" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3267974" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.19591528" sideWeight="0.49346405" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.009077156" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32843137" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.15582451" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.14447807" sideWeight="0.50653595" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39379084" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Data View" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32980332" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+    </layout-to-restore>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="processedProjectFiles" value="true" />
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <default-breakpoints>
+        <breakpoint type="python-exception">
+          <properties notifyOnTerminate="true" exception="BaseException">
+            <option name="notifyOnTerminate" value="true" />
+          </properties>
+        </breakpoint>
+      </default-breakpoints>
+      <option name="time" value="45" />
+    </breakpoint-manager>
+    <watches-manager />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/../2.0-小白进阶篇/2.03-网络编程/02-udp(用户数据包协议)之tftp文件下载器/Wireshark参数介绍.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://E:/Python全套教程/Python最新就业班/第2章 python核心编程/第3节 网络编程(7.24五天)/02.网络编程-tftp文件下载器/源码/发送请求测试.py" />
+    <entry file="file://$PROJECT_DIR$/../2.0-小白进阶篇/2.03-网络编程/02-udp(用户数据包协议)之tftp文件下载器/2.03.4-tftp下载器.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="256">
+          <caret line="16" column="10" lean-forward="true" selection-start-line="16" selection-start-column="10" selection-end-line="16" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://E:/Python全套教程/Python最新就业班/第2章 python核心编程/第3节 网络编程(7.24五天)/02.网络编程-tftp文件下载器/源码/tftp-download.py" />
+    <entry file="file://$PROJECT_DIR$/../2.0-小白进阶篇/2.03-网络编程/02-udp(用户数据包协议)之tftp文件下载器/2.03.5-tftp上传器.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="17" column="5" lean-forward="false" selection-start-line="17" selection-start-column="5" selection-end-line="17" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../2.0-小白进阶篇/2.03-网络编程/02-udp(用户数据包协议)之tftp文件下载器/上传例子.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="128">
+          <caret line="8" column="19" lean-forward="true" selection-start-line="8" selection-start-column="19" selection-end-line="8" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../2.0-小白进阶篇/2.03-网络编程/01-网络概述丶socket(套接字)/2.03.1-socket（套接口）echo服务器.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="304">
+          <caret line="19" column="0" lean-forward="true" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://E:/Python全套教程/Python最新就业班/第2章 python核心编程/第3节 网络编程(7.24五天)/03.网络编程-网络通信过程/源码/02-tcp客户端.py" />
+    <entry file="file://E:/Python全套教程/Python最新就业班/第2章 python核心编程/第3节 网络编程(7.24五天)/03.网络编程-网络通信过程/源码/01-tcp服务器.py" />
+    <entry file="file://$PROJECT_DIR$/../2.0-小白进阶篇/2.03-网络编程/02-udp(用户数据包协议)之tftp文件下载器/2.03.6-udp用于广播.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="256">
+          <caret line="16" column="51" lean-forward="true" selection-start-line="16" selection-start-column="51" selection-end-line="16" selection-end-column="51" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../2.0-小白进阶篇/2.03-网络编程/02-udp(用户数据包协议)之tftp文件下载器/udp特点以及广播">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="320">
+          <caret line="20" column="26" lean-forward="false" selection-start-line="20" selection-start-column="26" selection-end-line="20" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../2.0-小白进阶篇/2.03-网络编程/01-网络概述丶socket(套接字)/2.03.2-(udp网络通信)模拟QQ聊天-多线程.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="224">
+          <caret line="15" column="0" lean-forward="true" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../2.0-小白进阶篇/2.03-网络编程/03-tcp(传输控制协议)丶网络访问的过程/TCP通信的过程图.png" />
+    <entry file="file://$PROJECT_DIR$/../2.0-小白进阶篇/2.03-网络编程/03-tcp(传输控制协议)丶网络访问的过程/在物理机中ping的过程.png" />
+    <entry file="file://$PROJECT_DIR$/../2.0-小白进阶篇/2.03-网络编程/01-网络概述丶socket(套接字)/TCP IP协议丶端口丶IP概述.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="304">
+          <caret line="19" column="36" lean-forward="false" selection-start-line="19" selection-start-column="36" selection-end-line="19" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../2.0-小白进阶篇/2.03-网络编程/03-tcp(传输控制协议)丶网络访问的过程/03-服务器--多进程.py" />
+    <entry file="file://$PROJECT_DIR$/../2.0-小白进阶篇/2.03-网络编程/03-tcp(传输控制协议)丶网络访问的过程/2.03.8-服务器--多线程.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../2.0-小白进阶篇/2.03-网络编程/03-tcp(传输控制协议)丶网络访问的过程/2.03.9-服务器-单进程.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../2.0-小白进阶篇/2.03-网络编程/03-tcp(传输控制协议)丶网络访问的过程/访问百度的过程.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="380">
+          <caret line="51" column="6" lean-forward="false" selection-start-line="51" selection-start-column="6" selection-end-line="51" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../2.0-小白进阶篇/2.01-核心编程/1.01.3-生成器应用于协程.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="297">
+          <caret line="49" column="18" lean-forward="true" selection-start-line="49" selection-start-column="18" selection-end-line="49" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../2.0-小白进阶篇/2.02-Linux系统编程/2.02-Demo.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="112">
+          <caret line="7" column="14" lean-forward="true" selection-start-line="7" selection-start-column="14" selection-end-line="7" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../2.0-小白进阶篇/2.02-Linux系统编程/协程/2.02.3-gevent协程(升级版).py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="208">
+          <caret line="13" column="37" lean-forward="true" selection-start-line="13" selection-start-column="37" selection-end-line="13" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../2.0-小白进阶篇/2.02-Linux系统编程/协程/2.02.1-生成器完成协程.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="192">
+          <caret line="12" column="11" lean-forward="true" selection-start-line="11" selection-start-column="24" selection-end-line="12" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../2.0-小白进阶篇/2.02-Linux系统编程/协程/2.02.2-greelet协程.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="15" column="12" lean-forward="true" selection-start-line="15" selection-start-column="12" selection-end-line="16" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../2.0-小白进阶篇/2.03-网络编程/03-tcp(传输控制协议)丶网络访问的过程/2.03.10-单进程服务器-非堵塞模式.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="16">
+          <caret line="14" column="14" lean-forward="false" selection-start-line="14" selection-start-column="14" selection-end-line="14" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/1.01.6-类的继承和重写再调用.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/1.01.8-多态丶类实例属性丶类实例方法丶静态方法.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="112">
+          <caret line="10" column="20" lean-forward="true" selection-start-line="10" selection-start-column="20" selection-end-line="10" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../2.0-小白进阶篇/2.03-网络编程/03-tcp(传输控制协议)丶网络访问的过程/2.04.13-gevent版TCP服务器.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="166">
+          <caret line="15" column="23" lean-forward="true" selection-start-line="15" selection-start-column="23" selection-end-line="15" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../2.0-小白进阶篇/2.03-网络编程/03-tcp(传输控制协议)丶网络访问的过程/2.03.7-服务器--多进程.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="224">
+          <caret line="15" column="11" lean-forward="false" selection-start-line="15" selection-start-column="11" selection-end-line="15" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../2.0-小白进阶篇/2.03-网络编程/03-tcp(传输控制协议)丶网络访问的过程/2.03.6-TCP服务器丶客户端.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="344">
+          <caret line="48" column="5" lean-forward="false" selection-start-line="48" selection-start-column="5" selection-end-line="48" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../2.0-小白进阶篇/2.03-网络编程/Demo.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="144">
+          <caret line="9" column="9" lean-forward="false" selection-start-line="9" selection-start-column="9" selection-end-line="9" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/.PyCharm2017.1/system/python_stubs/1455430169/builtins.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="129">
+          <caret line="811" column="8" lean-forward="false" selection-start-line="811" selection-start-column="8" selection-end-line="811" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/1.01.12-老王开枪.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1501">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../2.0-小白进阶篇/2.02-Linux系统编程/进程/2.02.4-进程[习题] 拷贝大量文件.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="339">
+          <caret line="50" column="26" lean-forward="true" selection-start-line="50" selection-start-column="26" selection-end-line="50" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/1.01.3.1-带图片的转盘游戏.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="14">
+          <caret line="137" column="10" lean-forward="false" selection-start-line="137" selection-start-column="10" selection-end-line="137" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../2.0-小白进阶篇/2.05-正则表达式/2.05.面试题.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="15" column="0" lean-forward="false" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../2.0-小白进阶篇/2.04-案例web服务器/2.04.01-web服务器(HTTP)固定页面.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="258">
+          <caret line="27" column="10" lean-forward="false" selection-start-line="27" selection-start-column="4" selection-end-line="27" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/1.01.07继承丶私有方法丶私有属性.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../2.0-小白进阶篇/2.05-正则表达式/2.05.01-re模块中match匹配0-99数字.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="418">
+          <caret line="22" column="0" lean-forward="false" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://D:/Python/Python/Lib/site-packages/IPython/core/interactiveshell.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="55">
+          <caret line="2807" column="0" lean-forward="false" selection-start-line="2807" selection-start-column="0" selection-end-line="2807" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../2.0-小白进阶篇/2.05-正则表达式/2.05.02-re模块中match匹配163、QQ、126邮箱.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="190">
+          <caret line="10" column="0" lean-forward="false" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/1.01.3-转盘游戏.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="171">
+          <caret line="9" column="20" lean-forward="true" selection-start-line="9" selection-start-column="20" selection-end-line="9" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/1.01.13-飞机大战.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="304">
+          <caret line="22" column="0" lean-forward="true" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../2.0-小白进阶篇/2.05-正则表达式/2.05.04-使用替换将数据加一.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="228">
+          <caret line="12" column="10" lean-forward="false" selection-start-line="12" selection-start-column="10" selection-end-line="12" selection-end-column="10" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../2.0-小白进阶篇/2.05-正则表达式/2.05.05-sub将数据进行替换.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="532">
+          <caret line="28" column="0" lean-forward="false" selection-start-line="28" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../2.0-小白进阶篇/2.05-正则表达式/2.05.03-match-search-findall方法.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../2.0-小白进阶篇/2.05-正则表达式/2.05.06-贪婪模式和非贪婪模式.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../2.0-小白进阶篇/2.05-正则表达式/知识点.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3154">
+          <caret line="166" column="0" lean-forward="false" selection-start-line="166" selection-start-column="0" selection-end-line="166" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../3.0-数据库/新建文本文档.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../2.0-小白进阶篇/2.05-正则表达式/匹配网址和找单词练习.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="209">
+          <caret line="11" column="0" lean-forward="false" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>

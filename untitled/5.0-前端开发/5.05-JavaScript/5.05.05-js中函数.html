@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>js中匿名函数</title>
+	<script type="text/javascript">
+		function aa(){
+			var oDiv1 = document.getElementById("div1");
+
+			alert(oDiv1.innerHTML);
+
+			oDiv1.innerHTML = '这是第二遍弹窗';
+			alert(oDiv1.innerHTML);
+		}
+
+
+	</script>
+</head>
+<body>
+	<div id="div1" title="" >这是一个div</div>
+	<input type="button" name="" value="弹窗" onclick="aa()">
+</body>
+</html>

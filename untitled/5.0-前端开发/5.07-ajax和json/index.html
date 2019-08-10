@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>ajax测试</title>
+	<script type="text/javascript" src='js/jquery-1.12.4.min.js'></script>
+	<script type="text/javascript">
+		$.ajax({
+			url: 'js/data.json',
+			type: 'get',
+			dataType: 'json'
+			// data: {param1: 'value1'}
+		})
+		//正常
+		.done(function(dat){
+			$('#p1').html('欢迎'+dat.data.name+'访问网站');
+		})
+		//报错
+		.fail(function(){
+			alert('报错');
+		})
+
+	</script>
+
+
+</head>
+<body>
+	<h1>首页</h1>
+	<p id="p1"></p>
+</body>
+</html>

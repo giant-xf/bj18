@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>图片翻面效果</title>
+    <style type="text/css">
+        img{
+            width: 300px;
+            height: 270px;
+        }
+
+        .con{
+            width: 300px;
+            height: 270px;
+            margin: 100px auto 0;
+            position: relative;
+        }
+
+        .box,.box2{
+            width: 300px;
+            height: 270px;
+            position: absolute;
+            left: 0;
+            top:0;
+            transform: perspective(800px) rotateY(0deg) ;
+            transition: all 1s ease;
+            /*将两个块的背面设置为透视*/
+            backface-visibility: hidden;
+        }
+
+        .box2{
+            background-color: cyan;
+            text-align: center;
+            line-height: 270px;
+            transform-style: preserve-3d;
+            /*先将带字的块翻转过去*/
+            transform: perspective(800px) rotateY(-180deg) ;
+
+        }
+
+        .con:hover .box{
+            /*当触发hover时翻转过去*/
+            transform: perspective(800px) rotateY(180deg) ;
+        }
+
+        .con:hover .box2{
+            /*当触发hover时翻转回来*/
+            transform: perspective(800px) rotateY(0deg) ;
+        }
+
+    </style>
+
+</head>
+<body>
+    <div class="con">
+        <div class="box"><img src="image/banner02.jpg" alt=""></div>
+        <div class="box2">图片文字说明</div>
+
+    </div>
+
+
+</body>
+</html>

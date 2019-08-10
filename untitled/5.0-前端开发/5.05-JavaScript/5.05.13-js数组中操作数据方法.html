@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>js操作数组</title>
+	<script type="text/javascript">
+
+		var aRr1 = [1,2,3,4] ;
+
+		// alert(aRr1.length); //弹出数组的长度
+
+		// alert(aRr1[2]); //弹出下标元素
+		
+		// alert(aRr1.join('--')); //用特定的符号将数组连接
+		aRr1.push('aa');  //从数组最后增加元素
+		// alert(aRr1);
+
+		aRr1.pop(); //从数组最后删除元素
+		// alert(aRr1);
+
+		// aRr1.unshift('00'); //从数组前面增加元素
+		// alert(aRr1);
+
+		// aRr1.shift();	//从数组前面删除元素
+		// alert(aRr1);
+
+		// aRr1.reverse();  //将数组元素位置倒序
+		// alert(aRr1);
+
+		var aRr2 = ['a','b','c','d','a','b','c','d']
+		var num =aRr2.indexOf('c');
+		alert(num);
+
+		aRr2.splice(2,3); //删除指定位置开始的指定个数的元素
+		alert(aRr2);
+
+		aRr2.splice(2,2,1,2,3,4); //删除指定位置开始的指定个数的元素，并插入指定的元素
+		alert(aRr2);
+
+
+
+	</script>
+</head>
+<body>
+
+	
+</body>
+</html>

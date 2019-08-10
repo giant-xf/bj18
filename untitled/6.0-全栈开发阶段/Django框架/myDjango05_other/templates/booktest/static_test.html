@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>图片显示</title>
+</head>
+<body>
+<img src="/static/images/mm.jpg" alt="mm"> <br>
+<img src="/aaa/images/mm.jpg" alt="mm"> <br>
+动态加载静态文件路径 <br>
+{% load staticfiles %}
+<img src="{% static 'images/mm.jpg' %}" alt="mm"> <br>
+</body>
+</html>

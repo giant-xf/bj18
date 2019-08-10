@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>cookie</title>
+	<script type="text/javascript " src='js/jquery-1.12.4.min.js'></script>
+	<script type="text/javascript" src='js/jquery.cookie.js'></script>
+	<script type="text/javascript">
+		//需要在服务器中运行
+		$.cookie('mycookie','ok',{expires:7,path:'/'});
+
+		var val = $.cookie('mycookie');
+		alert(val);
+	</script>
+
+</head>
+<body>
+	<div id="div"></div>
+</body>
+</html>

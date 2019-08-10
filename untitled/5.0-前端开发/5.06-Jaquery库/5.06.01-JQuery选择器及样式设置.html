@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<script type="text/javascript " src='js/jquery-1.12.4.min.js'></script>
+	<script type="text/javascript">
+		$(function(){
+
+			//选择ul下所有的li元素
+			// $('#ul1 li').css({backgroundColor:'pink'});
+			
+			//选择id为ul1元素下的第一个li元素
+			// $('#ul1 li:first').css({backgroundColor:'pink'});
+
+			//odd:选择id为ul1元素下的第奇数行2,4,6(下标1,3,5)
+			//even:选择id为ul1元素下的第偶数行1,3,5(下标2,4,5)
+			// $('#ul1 li:odd').css({backgroundColor:'green'});
+			// $('#ul1 li:even').css({backgroundColor:'gold'});
+
+			// $('#ul1 li:eq(2)') //选择id为ul1元素下的第3个li
+			// $('#ul1 li:gt(2)') // 选择id为ul1元素下的前三个之后的li
+			// $('#ul1 li:eq(2)').css({backgroundColor:'pink'});
+			// $('#ul1 li:gt(2)').css({backgroundColor:'green'});
+		 	
+			// $('#myForm :input') // 选择表单中的input元素
+			// $('div:visible') //选择可见的div元素
+			// $('#form :input').css({width:'100px', height:'200px'});
+			// $('#ul1:visible').css({backgroundColor:'red'});
+			
+
+
+
+			// 选择包含p元素的div元素
+			// $('div').has('p'); 
+			//选择class不等于myClass的div元素
+			// $('div').not('.myClass'); 
+			//选择class等于myClass的div元素
+			// $('div').filter('.myClass'); 
+			//选择第1个div元素
+			// $('div').first(); 
+			//选择第6个div元素
+			// $('div').eq(5);
+			
+
+
+
+			//选择div1元素前面的第一个p元素
+			//$('#div1').prev('p').css({backgroundColor:'pink'}); 
+			//选择div元素前面所有p元素
+			//$('#div1').prevAll('p').css({backgroundColor:'pink'}); 
+			
+			//选择div1元素后面的第一个p元素
+			// $('#div1').next('p'); 
+			//选择div1元素后面的所有p元素
+			// $('#div1').nextAll('p').css({backgroundColor:'red'});
+			 
+			//选择离div1最近的那个元素,可以是子级，也可以是父级
+			// $('#p1').closest('div').css({backgroundColor:'red'}); 
+			
+			//选择div1的父元素
+			// $('#div1').parent(); 
+			
+			//选择div1的所有子元素,
+			//前者是可以使用end()回到Ul1继续设置样式
+			//后者不能回到父级
+			// $('#ul1').children().css({backgroundColor:'red'}).end().css({backgroundColor:'pink'}); 
+			// $('#ul1 li')
+			
+			//选择div1的同级元素,除自己外
+			// $('#div1').siblings(); 
+			
+			//选择div1内子元素的class等于myClass的元素
+			// $('#div1').find('.myClass'); 
+
+
+
+
+
+
+
+
+
+
+
+
+		});
+		
+	</script>
+
+</head>
+<body>
+	<p>p</p>
+	<div>div</div>
+	<p>p</p>
+	<div id="div1">
+		<p>123
+			<div id="div2">
+				<p id="p1"> &nbsp;&nbsp;&nbsp;---p标签</p>
+				<p>	&nbsp;&nbsp;&nbsp;---p标签</p>
+			</div>
+		</p>
+	</div>
+	<p>p</p>
+	<div>div</div>
+	<p>p</p>
+
+
+	<ul id="ul1">
+		<li>1</li>
+		<li style="display: none;">2</li>
+		<li>3</li>
+		<li>4</li>
+		<li style="display: none;">5</li>
+		<li>6</li>
+	</ul>
+	
+	<form id="form">
+		<input type="text" value="" placeholder="请输入账号">
+		<input type="text" value="" placeholder="请输入密码">
+	</form>
+
+	
+
+</body>
+</html>

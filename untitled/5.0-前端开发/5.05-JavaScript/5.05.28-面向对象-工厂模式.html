@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+
+	<script type="text/javascript">
+
+		function Person(name,age,job){
+
+			var o = new Object();
+
+			o.name = name;
+			o.age = age;
+			o.job = job;
+
+			o.showname = function(){
+				alert(this.name);
+			}
+
+			o.showage = function(){
+				alert(this.age);
+			}
+
+			o.showjob = function(){
+				alert(this.job);
+			}
+
+			return o;
+		}
+
+		var tom = Person('tom',18,'程序员');
+		var jack = Person('jack',20,'策划');
+
+		tom.showjob();
+		tom.showage();
+		jack.showjob();
+
+	</script>
+</head>
+<body>
+	
+</body>
+</html>

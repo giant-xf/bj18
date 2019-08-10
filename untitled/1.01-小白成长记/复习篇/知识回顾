@@ -1,0 +1,68 @@
+查看关键字:
+import keyword
+keyword.kwlist
+
+关键字:
+and as assert break class continue def del
+elif else except exec finally for from global
+if in import is lambda not or pass
+print raise return try while with yield
+
+
+随机数模块random
+
+
+
+i=1
+while i>=1:
+    while i>=1 and i<=5:
+        print("*"*i,end="")
+        print("")
+        break
+
+    while i>=6 and i<=9:
+        print("*" * (10-i), end="")
+        print("")
+        break
+    i+=1
+
+
+str.split()中默认为空格，既不加"";
+
+
+匿名函数:
+lambda 函数能接受任何数量的参数，但只能返回一个表达式的值
+lambda x:x.group()
+
+
+函数参数:
+1.缺省参数：
+    def printinfo(name,age=35)
+        pass
+    调用函数时，缺省参数的值如果没有传入，则被认为是默认值
+  注意：带有默认值的参数一定要位于参数列表的最后面
+
+2.不定长参数：
+    有时可能需要一个函数能处理比当初声明时更多的参数，这些
+    参数叫做不定长参数，声明时不会命名
+    def fun(a,b,*args,**kwargs):
+        print("a =",a)
+        print("b =",b)
+        print("args =",args)
+        print("kwargs:")
+        for key,value in kwargs.items():
+            print(key,"=",value)
+
+    带有(*)的变量args会存放所有未命名的变量参数,args为元组；
+    带有(**)的变量kwargs存放命名参数，即形如key=value的参数，kwargs为字典
+
+
+3.引用传参：
+    def selfadd(a):
+        a +=a
+    可变类型与不可变类型变量作为传参时：
+    可变类型可以自增，不可变类型不可以自增
+
+
+
+

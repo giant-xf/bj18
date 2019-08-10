@@ -1,0 +1,19 @@
+body{
+	background-color: red;
+}
+
+.div1{
+	width: 200px;
+	height: 200px;
+	background-color: green;
+	float: left;
+	margin: 20px;
+}
+
+.div2{
+	width: 200px;
+	height: 200px;
+	background-color: yellow;
+	float: left;
+	margin: 20px;
+}

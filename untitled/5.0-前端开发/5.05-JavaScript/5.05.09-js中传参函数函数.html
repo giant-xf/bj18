@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>js中传参函数函数</title>
+	<script type="text/javascript">
+
+		window.onload = function(){
+			var oDiv = document.getElementById('div');
+			function changestyle(styl,col){
+				oDiv.style[styl] = col;
+			}
+			changestyle('backgroundColor','red');
+			changestyle('color','pink');
+			changestyle('width','300px');
+			changestyle('height','50px');
+			changestyle('fontSize','30px');
+
+			var oDiv1 = document.getElementById('div1');
+			var oDiv2 = document.getElementById('div2');
+			var oBtn1 = document.getElementById('btn1');
+			var oBtn2 = document.getElementById('btn2');
+			var oBtn3 = document.getElementById('btn3');
+			var oBtn4 = document.getElementById('btn4');
+			var oBtn5 = document.getElementById('btn5');
+
+			oBtn1.onclick = function(){
+				var val1 = oDiv1.value;
+				var val2 = oDiv2.value;
+
+				alert(add(val1,val2));
+			}
+
+			oBtn2.onclick = function(){
+				var val1 = oDiv1.value;
+				var val2 = oDiv2.value;
+
+				alert(xiangcheng(val1,val2));
+			}
+
+			oBtn3.onclick = function(){
+				var val1 = oDiv1.value;
+				var val2 = oDiv2.value;
+
+				alert(xiangjian(val1,val2));
+			}
+
+			oBtn4.onclick = function(){
+				var val1 = oDiv1.value;
+				var val2 = oDiv2.value;
+
+				alert(xiangchu(val1,val2));
+			}
+
+			oBtn5.onclick = function(){
+				var val1 = oDiv1.value;
+				var val2 = oDiv2.value;
+
+				alert(mifang(val1,val2));
+			}
+
+			function add(a,b){
+
+				var c = parseInt(a) + parseInt(b);
+
+				return c;
+			}
+
+			function xiangcheng(a,b){
+				var c = a * b;
+
+				return c;
+			}
+
+			function xiangjian(a,b){
+				var c = a - b;
+				
+				return c;
+			}
+
+			function xiangchu(a,b){
+				var c = a / b;
+				
+				return c;
+			}
+
+			function mifang(a,b){
+				var s = 1;
+				for(var i = 1 ;i<=b;i++){
+					s =s*a;
+				}
+				return s;
+			}
+
+		}
+
+
+
+	</script>
+</head>
+<body>
+	<div id="div" title="" >这是一个div</div>
+	<input type="text" name="" id="div1" placeholder="请输入数字">
+	<input type="text" name="" id="div2" placeholder="请输入数字">
+	<input type="button" name="" value="相加" onclick="" id="btn1">
+	<input type="button" name="" value="相减" onclick="" id="btn3">
+	<input type="button" name="" value="相乘" onclick="" id="btn2">
+	<input type="button" name="" value="相除" onclick="" id="btn4">
+	<input type="button" name="" value="幂运算" onclick="" id="btn5">
+</body>
+</html>

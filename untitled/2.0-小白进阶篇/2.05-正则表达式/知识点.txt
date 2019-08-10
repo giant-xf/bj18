@@ -1,0 +1,209 @@
+
+1,re模块的一般⽤法:
+
+1、 . 匹配任意1个字符（除了\n）
+import re
+ret =re.match(".","a")
+ret.group()
+Out[9]: 'a'
+
+2.[ ] 匹配[ ]中列举的字符
+ret =re.match("[0-9]","2hello Python")
+ret.group()
+Out[7]: '2'
+
+3.\d 匹配数字，即0-9
+ret =re.match("嫦娥\d号","嫦娥1号发射成功")
+ret.group()
+Out[14]: '嫦娥1号'
+
+4.\D 匹配⾮数字，即不是数字
+ret =re.match("\D","我1日")
+ret.group()
+Out[17]: '我'
+
+5.\s 匹配空⽩，即 空格，tab键
+ret =re.match("\s","  我1日")
+ret.group()
+Out[22]: ' '
+
+6.\S 匹配⾮空⽩
+ret =re.match("\S","12  我1日")
+ret.group()
+Out[24]: '1'
+ret =re.match("\S","wo  我1日")
+ret.group()
+Out[25]: 'w'
+
+7.\w 匹配单词字符，即a-z、A-Z、0-9、_
+ret =re.match("\w","wo  我1日")
+ret.group()
+Out[26]: 'w'
+ret =re.match("\w","_wo  我1日")
+ret.group()
+Out[27]: '_'
+
+8.\W 匹配⾮单词字符
+ret =re.match("\W"," 日")
+ret.group()
+Out[49]: ' '
+ret =re.match("\W","+ 日")
+ret.group()
+Out[50]: '+'
+
+原始字符串:
+re.match(r"\\a\W\w",m).group()
+Out[14]: '\\a\\b'
+
+
+1,* 匹配前⼀个字符出现0次或者⽆限次，即可有可⽆
+re.match("\w*[a-z]","MKKKKmmd")
+Out[18]: <_sre.SRE_Match object; span=(0, 8), match='MKKKKmmd'>
+re.match("\w*\W","MKKKKmmd___}")
+Out[19]: <_sre.SRE_Match object; span=(0, 12), match='MKKKKmmd___}'>
+re.match("\w*\W","MKKKKmmd___}234")
+Out[20]: <_sre.SRE_Match object; span=(0, 12), match='MKKKKmmd___}'>
+
+2,+ 匹配前⼀个字符出现1次或者⽆限次，即⾄少有1次
+re.match("\w+\s","MLlld__      ")
+Out[26]: <_sre.SRE_Match object; span=(0, 8), match='MLlld__ '>
+re.match("\w+\s*","MLlld__      ")
+Out[27]: <_sre.SRE_Match object; span=(0, 13), match='MLlld__      '>
+
+3,? 匹配前⼀个字符出现1次或者0次，即要么有1次，要么没有
+re.match("\w?\s*","MLlld__      ")
+Out[28]: <_sre.SRE_Match object; span=(0, 1), match='M'>
+re.match("\w?\S*","MLlld__      ")
+Out[29]: <_sre.SRE_Match object; span=(0, 7), match='MLlld__'>
+re.match("\w?\S*\s","MLlld__      ")
+Out[30]: <_sre.SRE_Match object; span=(0, 8), match='MLlld__ '>
+
+4,{m} 匹配前⼀个字符出现m次
+re.match("1[3-8][0-9]\d{8}","13877666661")
+Out[43]: <_sre.SRE_Match object; span=(0, 11), match='13877666661'>
+re.match("1[3-8][0-9]\d{8}","1387766666f65f")
+
+5,{m,} 匹配前⼀个字符⾄少出现m次
+
+6,{m,n} 匹配前⼀个字符出现从m到n次
+
+
+
+1,^ 匹配字符串开头(还可以取反)
+
+
+
+2,$ 匹配字符串结尾
+re.match("[\w]{4,20}@163\.com","452wwww5@163.com").group()
+Out[24]: '452wwww5@163.com'
+re.match("[\w]{4,20}@163\.com","452wwww5@163.com111").group()
+Out[25]: '452wwww5@163.com'
+re.match("[\w]{4,20}@163\.com$","452wwww5@163.com111").group()
+Traceback (most recent call last):
+
+3,\b 匹配⼀个单词的边界
+re.match(r".*\bth\b","py th 11")
+Out[45]: <_sre.SRE_Match object; span=(0, 5), match='py th'>
+
+4,\B 匹配⾮单词边界(不是边界)
+re.match(r".*\Bth\B","pyth11")
+Out[46]: <_sre.SRE_Match object; span=(0, 4), match='pyth'>
+
+四种都不包括字符本身，都表示边界问题
+
+
+1,| 匹配左右任意⼀个表达式
+
+
+2,(ab) 将括号中字符作为⼀个分组
+ret = re.match(r"(<h2>).*(</h2>)","<h2>python</h2>")
+ret.group()
+Out[75]: '<h2>python</h2>'
+ret.group(1)
+Out[76]: '<h2>'
+ret.groups()
+Out[77]: ('<h2>', '</h2>')
+ret.groups()[1]
+Out[78]: '</h2>'
+
+3,\num 引⽤分组num匹配到的字符串
+ret = re.match(r"<.+><.+>.+</.+></.+>","<html><h1>wwww</h1></html>")
+ret.group()
+Out[101]: '<html><h1>wwww</h1></html>'
+ret = re.match(r"<(.+)><(.+)>.+</\2></\1>","<html><h1>wwww</h1></html>")
+ret.group()
+Out[103]: '<html><h1>wwww</h1></html>'
+
+4,(?P<name>) 分组起别名
+5,(?P=name) 引⽤别名为name分组匹配到的字符串
+ret = re.match(r"<(?P<key1>.+)><(?P<key2>.+)>.+</(?P=key2)></(?P=key1)>","<html><h1>wwww</h1></html>")
+ret.group()
+Out[117]: '<html><h1>wwww</h1></html>'
+
+
+
+
+2,re模块的⾼级⽤法
+
+    1,search:匹配到第一个就会结束
+
+ret = re.search(r"\d+", "python = 9999, c = 7890, c++ = 1234")
+ret.group()
+Out[134]: '9999'
+
+
+    2,findall:匹配出所有符合的放在数组里面（没有group()方法）
+
+ret = re.findall(r"\d+", "python = 9999, c = 7890, c++ = 1234")
+ret
+Out[136]: ['9999', '7890', '1234']
+
+
+    3,sub  将匹配到的数据进⾏替换
+ret = re.sub(r"\d+","998","pythin =994")
+print(ret)
+pythin =998
+
+
+    4,split 根据匹配进⾏切割字符串，并返回⼀个列表
+ret = re.split(r":|,","info:zhangshan,30,hubei")
+print(ret)
+['info', 'zhangshan', '30', 'hubei']
+
+小结:match()方法是直接从第一个字符开始匹配的
+    search()方法是从第一个能匹配的字符开始匹配的
+    sub()方法是将数据进行更新的(例如：网页访问量)
+
+
+
+
+
+贪婪模式和非贪婪模式:
+//贪婪模式(尽可能的匹配最大的，符合使前后正则要求的字符)
+s = "This is a number 234-235-22-423"
+re.match(r".+(\d+-\d+-\d+-\d+)",s).group(1)
+Out[26]: '4-235-22-423'
+//关闭贪婪模式(尽可能最小的匹配, 使符合前后正则要求的字符)
+re.match(r".+?(\d+-\d+-\d+-\d+)",s).group(1)
+Out[27]: '234-235-22-423'
+
+解决⽅式：⾮贪婪操作符“？”，这个操作符可以⽤在"*","+","?"的后⾯，要求
+正则匹配的越少越好
+
+贪婪模式和非贪婪模式最好的例子：
+re.match(r"aa(\d+)","aa23456bbb").group(1)
+Out[28]: '23456'
+re.match(r"aa(\d+?)","aa23456bbb").group(1)
+Out[29]: '2'
+re.match(r"aa(\d+)bbb","aa23456bbb").group(1)
+Out[30]: '23456'
+re.match(r"aa(\d+?)bbb","aa23456bbb").group(1)
+Out[31]: '23456'
+
+抓取url例子:
+s = """<img data-original="https://rpic.douyucdn.cn/appCovers/2016/11/13/1213973_201611131917_small.jpg" src="https://rpic.douyucdn.cn/appCovers/2016/11/13/1213973_201611131917_small.jpg" style="display: inline;">"""
+re.search(r"https.+\.jpg",s).group()
+Out[50]: 'https://rpic.douyucdn.cn/appCovers/2016/11/13/1213973_201611131917_small.jpg" src="https://rpic.douyucdn.cn/appCovers/2016/11/13/1213973_201611131917_small.jpg'
+re.search(r"https.+?\.jpg",s).group()
+Out[51]: 'https://rpic.douyucdn.cn/appCovers/2016/11/13/1213973_201611131917_small.jpg'
+

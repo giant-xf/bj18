@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<script type="text/javascript " src='js/jquery-1.12.4.min.js'></script>
+	<script type="text/javascript">
+		//无需在服务器中运行
+
+		//设置
+		//可以永久保存，除非用户手动删除
+		// localStorage.setItem('dat','123');
+		localStorage.dat = '123';
+		//当用户退出同源窗口时就会自动删除 
+		// sessionStorage.setItem('dat','222');
+		sessionStorage.dat = '222';
+
+		//获取
+		alert(localStorage.dat);
+		alert(sessionStorage.dat);
+
+		//删除
+		// localStorage.removeItem("dat");
+		// sessionStorage.removeItem('dat');
+	</script>
+
+</head>
+<body>
+	<div id="div">这是一个div</div>
+</body>
+</html>

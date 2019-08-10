@@ -1,0 +1,16 @@
+div{
+    font-size: 20px;
+    color: red;
+    line-height: 20px;
+    text-indent:40px ;
+}
+
+h3{
+    font:normal 30px/20px "Microsoft JhengHei";
+    text-align: center;
+}
+
+a{
+    text-decoration: none;
+}
+

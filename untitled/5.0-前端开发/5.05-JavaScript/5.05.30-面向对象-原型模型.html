@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	
+	<script type="text/javascript">
+		function Person(name,age,job){
+			this.name = name;
+			this.age = age;
+			this.job = job;
+		}
+
+		Person.prototype.showname = function(){
+			alert(this.name);
+		}
+
+		Person.prototype.showage = function(){
+			alert(this.age);
+		}
+
+		Person.prototype.showjob = function(){
+			alert(this.job);
+		}
+		
+		var Tom = new Person('Tom',18,'程序员');
+		var Jack = new Person('Jack',20,'销售');
+
+		//重写一个实例对象的方法不改变另一个实例对象
+		
+		Tom.showjob = function(){
+			alert('我的工作是'+this.job);
+		}
+
+		Tom.showjob();
+		Jack.showjob();
+
+		//返回值为True，说明使用的是同一个对象方法；
+		alert(Tom.showjob == Jack.showjob);
+
+	</script>
+
+</head>
+<body>
+	
+
+</body>
+</html>

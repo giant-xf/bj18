@@ -1,0 +1,117 @@
+(一)、python是动态语⾔:
+class Person(object):
+    def __init__(self, name = None, age = None):
+        self.name = name
+        self.age = age
+    def eat(self):
+        print("正在吃-----")
+def run(self):
+    print('正在跑---')
+1. 运⾏的过程中给对象绑定(添加)属性
+P=Person('老王',23)
+P.sex ='f'
+P.sex
+
+2. 运⾏的过程中给类绑定(添加)⽅法
+import types
+p =Person('xiaowang',12)
+p.run =types.MethodType(run,p)
+p.run()
+既然给类添加⽅法，是使⽤ 类名.⽅法名 = xxxx ，那么给对象添加⼀个⽅法
+也是类似的 对象.⽅法名 = xxxx
+#定义⼀个类⽅法
+    @classmethod
+    def testClass(cls):
+    cls.num = 100
+#定义⼀个静态⽅法
+    @staticmethod
+    def testStatic():
+    print("---static method----")
+Person.testClass = testClass
+Person.testStatic = testStatic
+
+
+3. 运⾏的过程中删除属性、⽅法
+删除的⽅法:
+1. del 对象.属性名
+2. delattr(对象, "属性名")
+
+
+
+(二)、__slots_
+_
+为了达到限制的⽬的，Python允许在定义class的时候，定义⼀个特殊的
+__slots__变量，来限制该class实例能添加的属性：
+
+class Person(object):
+    __slots__ = ("name", "age")
+注意:
+使⽤__slots__要注意，__slots__定义的属性仅对当前类实例起作⽤，对
+继承的⼦类是不起作⽤的
+
+
+(三)、⽣成器
+1. 什么是⽣成器
+在Python中，这种⼀边循环⼀边计算的机制，称为⽣成器：generator
+
+2. 创建⽣成器⽅法1
+要创建⼀个⽣成器，有很多种⽅法。第⼀种⽅法很简单，只要把⼀个列表⽣
+成式的 [ ] 改成 ( )
+
+G =(x*2 for x in range(5))
+G
+Out[164]: <generator object <genexpr> at 0x0000000006BF9E08>
+
+通过 for 循环来迭代它
+
+3. 创建⽣成器⽅法2
+def fib(times):
+    n = 0
+    a,b = 0,1
+    while n<times:
+        yield (b)  #我们在循环过程中不断调⽤ yield ，就会不断中断。
+        a,b = b,a+b
+        n+=1
+    return 'done'
+
+    捕获异常：
+    while True:
+    try:
+        x =next(f)
+        print("value:",x)
+    except Exception as e:
+        print("返回值为:",e)
+        break
+
+send()、next()、__next__()方法
+    def fib():
+        i =0
+        temp =None
+        while i<5:
+            print(temp)
+            temp = yield (i)
+            print('-------')
+            print(temp)
+            i+=1
+        return 'done'
+    f =fib()
+    f.__next__()
+    f.send('aaa')
+
+⽣成器的特点：
+1. 节约内存
+2. 迭代到下⼀次的调⽤时，所使⽤的参数都是第⼀次所保留下的，即是
+说，在整个所有函数调⽤的参数都是第⼀次所调⽤时保留的，⽽不是新
+创建的
+
+迭代器:
+1. 可迭代对象
+2.判断是否可以迭代
+3.迭代器
+4.iter()函数
+
+
+闭包:
+#在函数内部再定义⼀个函数，并且这个函数⽤到了外边函数的变量，
+# 那么将这个函数以及⽤到的⼀些变量称之为闭包
+

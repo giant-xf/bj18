@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+
+	<link rel="stylesheet" href="css/mian.css">
+	<!-- <link rel="stylesheet" href="css/reset.css"> -->
+	<script type="text/javascript" src="js/main.js"></script>
+	<script type="text/javascript" src="js/set_root.js"></script>
+	<script type="text/javascript">
+		window.onload = function () {
+
+
+			var oMask = document.getElementById('mask');
+			var oSpan = document.getElementById('span');
+			var oMask1 = document.getElementById('mask1');
+			var oBtn2 = document.getElementById('btn2');
+			var oBtn1 = document.getElementById('btn1');
+			var oBtn3 = document.getElementById('btn3');
+
+
+			oMask.style.display = 'block';
+
+			oBtn3.onclick = function () {
+				function timeleft() {
+
+				if (oSpan.innerHTML == 0) {
+					oMask.style.display = 'none';
+					clearsetInterval(timeleft)
+				}
+				oSpan.innerHTML = oSpan.innerHTML * 1 - 1;
+			}
+
+
+			// timeleft();
+			 setInterval(timeleft, 1000);
+			}
+
+			oBtn2.onclick = function () {
+				oMask1.style.display = 'block';
+			};
+
+			oBtn1.onclick = function () {
+				var left = 5;
+				var bottom = 1000;
+				var a =100;
+				var b =500;
+				var c =1000;
+				var num1 = Math.random()*(b-a)+a;
+				var num2 = Math.random()*(c-a)+a;
+				// alert(oBtn1.style.left);
+				oBtn1.style.left = (left+num1)/40 + 'rem';
+				oBtn1.style.bottom = (bottom-num2)/40 + 'rem';
+			};
+		};
+	</script>
+	<style type="text/css">
+		.main{
+		    position: absolute;
+		    left: 0;
+		    right: 0;
+		    top: 0;
+		    bottom: 0;
+		    background-color: #fff;
+		}
+
+
+		.box{
+			width: 80%;
+			height: 80%;
+			background-color: pink;
+			margin:2rem auto 0;
+			position: relative;
+		}
+
+		.box .box1{
+			position: absolute;
+			width: 100%;
+			height: 70%;
+			font-size: 40px;
+			color: #fefefe;
+			text-align: center;
+			padding-top:5.0rem;
+		}
+
+		.box .box2{
+			position: absolute;
+			width: 100%;
+			bottom:50px;
+		}
+
+		.box .box2 .input1{
+			position: absolute;
+			width: 2.0rem;
+			height: 1rem;
+			left: 2.5rem ;     /*5px  670px*/
+			bottom: 0;      /*1200  0*/
+			margin: 0;
+		}
+
+		.box .box2 .input2{
+			position: absolute;
+			width: 2rem;
+			height: 1rem;
+			right: 2.5rem;
+			bottom:0;
+			margin: 0;
+		}
+
+		.mask .input3{
+			display: block;
+			margin: 0.5rem auto 0;
+			width: 2.5rem;
+			height: 1.75rem;
+			color: #000;
+		}
+
+		.mask .input3:hover{
+			width: 2.5rem;
+			height: 1.75rem;
+			border: 1px solid gold;
+			background-color: yellow;
+		}
+
+		.mask{
+			position: fixed;
+			width: 100%;
+			height: 100%;
+			background-color:#000;
+			left: 0;
+			top:0 ;
+			opacity: 0.5;
+			filter: alpha(opacity=30);
+			z-index: 9990;
+		}
+
+		.mask p {
+			/*display: block;*/
+			font-size: 70px;
+			color: #fff;
+			margin:0 0 0 5.0rem;
+			/*margin: auto;*/
+		}
+
+		.mask p span{
+			font-size: 2.5rem;
+			color: red;
+		}
+
+		.mask1{
+			position: fixed;
+			width: 100%;
+			height: 100%;
+			background-color:pink;
+			left: 0;
+			top:0 ;
+			opacity: 0.8;
+			filter: alpha(opacity=30);
+			z-index: 9999;
+		}
+		.mask1 span{
+			/*margin:2.5rem 0 0 5.0rem;*/
+			text-align: center;
+			font-size: 2.5rem;
+			color: red;
+
+		}
+
+
+	</style>
+</head>
+<body>
+	<div class="main">
+		<div class="box">
+			<div id="box1" class="box1">你喜欢我吗？</div>
+			<div class="box2">
+				<input class="input1" type="button" id="btn1" value="不喜欢">
+				<input class="input2" type="button" id="btn2" value="喜欢">
+			</div>
+		</div>
+	</div>
+	<div class="mask" id="mask" style="display: none;">
+		<input type="button" id="btn3" value="开始" class="input3">
+		<p>倒计时<span id="span">3</span></p>
+	</div>
+	<div class="mask1" id="mask1" style="display: none;"><span id="span1">我也喜欢你呀</span></div>
+
+
+</body>
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<script type="text/javascript " src='js/jquery-1.12.4.min.js'></script>
+	<script type="text/javascript">
+		$(function(){
+
+			// html() 取出或设置html内容
+			// 可以读出标签和写入标签
+			/*
+			alert($('#div').html());
+			$('#div').html('<p>这是一个p标签元素</p>');
+			*/
+		
+			 //只取出文本内容，不能取出标签
+			 //只设置文本内容，不能设置标签
+			/*
+			alert($('#div').text());
+			$('#div').text('<p>这是一个p标签元素</p>');
+			*/
+			
+			//取出某个属性的值
+			// 设置某个属性的值，覆盖原有的值
+			//alert($('#div').attr('class'));
+			// $('#div').attr({class:'box'});
+			
+			//弹出checkbox属性是否被选中，attr不能选中这个属性，只能用prop方法；
+			alert($('#checkbox').prop('checked'));
+			$('#checkbox').prop({checked:true});
+			
+
+		});
+		
+	</script>
+
+</head>
+<body>
+	<div id="div" class="div"><span>这是一个div元素</span></div>
+	<input type="checkbox" id="checkbox" >多选
+</body>
+</html>

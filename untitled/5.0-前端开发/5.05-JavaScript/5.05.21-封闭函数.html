@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<script type="text/javascript">
+		
+		/*闭包函数，里面的东西内部私用，可以调用外部，但是不能外部调用里面的
+		格式一:
+		(function(){
+			var a = '....';
+			function aa(){
+				//该怎样写就怎样写
+			}	
+		})();
+
+		格式二(可以前面加' ！'或者' ~ ')
+		!function(){
+			var a = '....';
+			function aa(){
+				//该怎样写就怎样写
+			}	
+		}();
+		*/
+		(function(){
+			var str = '欢迎来到弹窗';
+			alert(str);
+		})();
+	</script>
+</head>
+<body>
+
+</body>
+</html>

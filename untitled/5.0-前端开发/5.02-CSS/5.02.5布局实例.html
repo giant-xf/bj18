@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>布局实例</title>
+    <style type="text/css">
+        .menu{
+            list-style: none;
+            width: 960px;
+            height: 40px;
+            background-color: #3366cc;
+
+            margin: 50px auto 0;
+            padding: 0;
+            position: relative;
+
+        }
+
+        .menu li{
+            float: left;
+            width: 100px;
+            height: 40px;
+            text-align: center;
+            line-height: 40px ;
+
+        }
+
+        .menu li a{
+            text-decoration: none;
+            color: white;
+
+        }
+
+        .menu li:hover{
+            background-color: #00619f;
+        }
+
+        .menu .active{
+            background-color: #00619f;
+        }
+
+        .menu .new{
+            width: 33px;
+            height: 19px;
+            background:url(../image/new.png) no-repeat;
+            position: absolute;
+            left: 334px;
+            top: -11px;
+        }
+
+        .menu .new :hover{
+            background: url(../image/new.png) no-repeat;
+
+        }
+
+
+    </style>
+
+</head>
+<body>
+<ul class="menu" >
+    <li><a href="">首页</a></li>
+    <li class="active"><a href="">网站建设</a></li>
+    <li><a href="">网站建设</a></li>
+    <li><a href="">网站建设</a></li>
+    <li><a href="">网站建设</a></li>
+    <li><a href="">网站建设</a></li>
+    <li><a href="">网站建设</a></li>
+    <li class="new"></li>
+</ul>
+
+
+</body>
+</html>

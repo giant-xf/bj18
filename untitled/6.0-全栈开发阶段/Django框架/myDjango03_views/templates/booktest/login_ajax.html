@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ajax登入页面</title>
+    <script src="/static/js/jquery-1.12.4.min.js"></script>
+    <script>
+        $(function () {
+            $('#btnLogin').click(function () {
+                //获取用户名和密码
+                username = $('#username').val();
+                password = $('#password').val();
+
+                // 利用ajax实现局部刷新
+//                $.ajax({
+//                    'url': '/login_ajax_check',
+//                    'type': 'post',
+//                    'data': {'username':username,'password':password},
+//                    'dataType': 'json',
+//                    // 'async': false  //默认为true异步交互,false为同步交互
+//                }).success(function (data) {
+//                    //登入失败{'res':0}
+//                    if(data.res==0){
+//                        $('#error').show().html('用户名或密码错误')
+//
+//                    }
+//                    //登入成功{'res':1}
+//                    else{
+//                     //   跳转到首页
+//                        location.href = '/index'
+//                    }
+//                })
+
+                // ajax中post请求的简写
+                $.post('/login_ajax_check',{'username':username,'password':password},function (data) {
+                    if(data.res==0){
+                        $('#error').show().html('用户名或密码错误')
+
+                    }
+                    //登入成功{'res':1}
+                    else{
+                     //   跳转到首页
+                        location.href = '/index'
+                    }
+                });
+            })
+        })
+
+    </script>
+    <style>
+        #error{
+            display: none;
+            color: red;
+        }
+    </style>
+</head>
+<body>
+<div>
+    用户名:<input type="text" id="username"><br>
+    密码: <input type="password" id="password"> <br>
+    <div id="error"></div>
+    <input type="button" id="btnLogin" value="登入">
+
+</div>
+</body>
+</html>

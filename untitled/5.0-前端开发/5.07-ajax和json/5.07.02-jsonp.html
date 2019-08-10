@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<script type="text/javascript " src='js/jquery-1.12.4.min.js'></script>
+	<script type="text/javascript">
+		  $.ajax({
+            // 公开接口--某个网站的网址
+			  // 后面不加 ? ;有些要加
+            url: 'https://sug.so.360.cn/suggest',
+            type: 'get',
+            dataType: 'jsonp',
+            scriptCharset: 'utf-8',
+            // 提取关键词
+            data: {word: 'a'}
+        })
+		//正常
+		.done(function(data){
+			alert(data.s);
+		})
+		//报错
+		.fail(function(){
+			alert('报错');
+		})
+
+			
+		
+
+
+
+	</script>
+
+</head>
+<body>
+</body>
+</html>

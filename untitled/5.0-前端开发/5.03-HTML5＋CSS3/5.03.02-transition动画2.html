@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>动画-tow</title>
+    <style type="text/css">
+        .box{
+            width: 200px;
+            height: 300px;
+            margin: 50px auto 0;
+            border: 1px solid #000000;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .box img{
+            width: 200px;
+            height: 300px;
+
+        }
+
+        .box div{
+            width: 200px;
+            height: 200px;
+            color: #ffffff;
+            background-color: rgba(0,0,0,0.5);
+            position: absolute;
+            left: 0px;
+            top: 300px;
+            transition: all 0.5s cubic-bezier(0.750,-0.425,0.055,1.480);
+        }
+
+        .box:hover div{
+            top: 150px;
+        }
+
+        .box p{
+            font-size: 20px;
+            margin: 15px 10px;
+            line-height: 20px;
+        }
+        
+    </style>
+    
+</head>
+<body>
+    
+    <div class="box">
+        <img src="image/banner02.jpg" alt="">
+        <div>
+            <p>
+            图片说明：这是一个风景;
+            图片说明：这是一个风景;
+            图片说明：这是一个风景;
+            图片说明：这是一个风景;
+            </p>
+        </div>
+        
+    </div>
+
+
+</body>
+</html>

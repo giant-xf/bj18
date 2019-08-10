@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<script type="text/javascript " src='js/jquery-1.12.4.min.js'></script>
+
+	<style type="text/css">
+		.box{
+			width: 200px;
+			height: 200px;
+			background-color: gold;
+			margin: 100px auto 0;
+		}
+		.box1{
+			width: 100px;
+			height: 100px;
+			background-color: red;
+		}
+	</style>
+	<script type="text/javascript">
+
+		$(function(){
+
+			
+		/*	
+			//stop()可以解决鼠标移出和移入时上下抖动;
+			//进入子元素时也触发
+			$('#box').mouseover(function(){
+
+				$(this).animate({marginTop:50});
+			})
+
+			$('#box').mouseout(function(){
+
+				$(this).animate({marginTop:100});
+			})*/
+
+			/*
+			
+			 //stop()可以解决鼠标移出和移入时上下抖动;
+			//进入子元素时不触发
+			$('#box').mouseenter(function(){
+
+				$(this).stop().animate({marginTop:50});
+			})
+
+			$('#box').mouseleave(function(){
+
+				$(this).stop().animate({marginTop:100});
+			})*/
+
+			//将前面的整合成一个hover(function(){},function(){})
+			$('#box').hover(function(){
+
+				$(this).stop().animate({marginTop:50});
+			},function(){
+
+				$(this).stop().animate({marginTop:100});
+			})
+
+
+
+		})
+	</script>
+	
+</head>
+<body>
+	<div class='box' id="box">
+	<div class='box1'></div>
+	</div>
+
+</body>
+</html>

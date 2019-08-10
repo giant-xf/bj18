@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<script type="text/javascript">
+	window.onload = function(){
+		/*1、document
+		var backurl = document.referrer  //获取上一个跳转页面的地址(需要服务器环境)
+		主要应用于提高用户体验:用户未登入时已经进入购买商品页面，弹出登入页面，登入后跳回到用户选择商品购买页面。
+		*/
+		// window.location.href = 'http://www.baidu.com'; //获取或者重定url地址
+		
+		//file:///C:/Users/Administrator/PycharmProjects/untitled/5.0-%E5%89%8D%E7%AB%AF%E5%BC%80%E5%8F%91/5.05-JavaScript/5.05.25-%E5%86%85%E7%BD%AE%E5%AF%B9%E8%B1%A1.html ?a=jack#123; search搜索jack，hash搜索123; 
+		var Dat = window.location.search;
+		var hash = window.location.hash;
+
+
+		var oSpan = document.getElementById('span');
+		
+
+		var arr = Dat.split('=');
+		oSpan.innerHTML =arr[1];
+
+		// alert(hash);
+		var arr = [];
+		var a = 100;
+		var b = 500;
+		for(var i=0;i<10;i++){
+			var num = Math.random()*(b-a+1)+a;
+
+			arr.push(Math.floor(num));
+
+		}
+		alert(arr);
+	}
+
+	</script>
+</head>
+<body>
+	<div>欢迎<span id="span"></span>来到网站主页</div>
+</body>
+</html>

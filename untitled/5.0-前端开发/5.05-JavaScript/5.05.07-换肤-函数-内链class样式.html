@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>换肤2</title>
+	<script type="text/javascript">
+
+	window.onload = function(){
+		var oDiv0 = document.getElementById('button0');
+		var oDiv1 = document.getElementById('button1');
+		var oDiv2 = document.getElementById('button2');
+		oDiv0.onclick = skin0;
+		oDiv1.onclick =skin1;
+		oDiv2.onclick =skin2;
+		function skin0(){
+			var oDiv = document.getElementById('div1');
+
+			oDiv.className = 'div0' ;
+		}
+
+		function skin1(){
+			var oDiv = document.getElementById('div1');
+
+			oDiv.className = 'div2';
+
+		}
+
+		function skin2(){
+			var oDiv = document.getElementById('div1');
+
+			oDiv.className = 'div1' ;
+		}
+
+		}
+
+	</script>
+	<style type="text/css">
+		.div1{
+			width: 200px;
+			height: 200px;
+			border: 1px solid #333;
+			background-color: gold;
+		}
+
+		.div2{
+			width: 200px;
+			height: 200px;
+			border: 1px solid #333;
+			background-color: pink;
+		}
+
+		.div0{
+			width: 200px; 
+			height: 200px;
+			border: 1px solid #333;
+		}
+	</style>
+</head>
+<body>
+	<div id="div1" class="div0"></div>
+
+	<!-- 在行间调用js中函数 -->
+	<!-- <input type="button" value="默认皮肤" onclick="skin1()" id="button1">
+	<input type="button" value="个性皮肤" onclick="skin2()" id='button2'>
+	</body> -->
+	
+
+	<!-- 提取行间事件到上面 -->
+	<input type="button" value="默认皮肤" onclick="" id="button0">
+	<input type="button" value="个性皮肤1" onclick="" id="button1">
+	<input type="button" value="个性皮肤2" onclick="" id='button2'>
+</body>
+</html>

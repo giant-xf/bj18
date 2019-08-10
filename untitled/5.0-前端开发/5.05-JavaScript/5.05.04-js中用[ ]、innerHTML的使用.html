@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>js中用[]来操作属性</title>
+	<script type="text/javascript">
+		 //同时定义多个变量可以用","隔开，公用一个‘var’关键字
+		/*var c = 45,d='qwe',f='68';
+		var a = '您好';
+		alert(a);*/
+
+		window.onload = function function_name(argument) {
+
+			var oDiv1 = document.getElementById('div1');
+			// var sty = 'style';
+			var ddh = 'color';
+			// 用[]可以放变量。用 . 只能存本身的属性
+			oDiv1['style'][ddh] = "red";
+
+			alert(oDiv1.innerHTML);
+
+			var oDiv2 = document.getElementById('div2');
+
+			oDiv2.innerHTML = '<a href="http://www.baidu.com">百度网</a>';
+
+		}
+
+
+	</script>
+</head>
+<body>
+	<div id="div1" title="" >这是一个div</div>
+	<div id="div2"></div>
+</body>
+</html>

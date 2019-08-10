@@ -1,0 +1,298 @@
+﻿一丶初级语法
+
+1丶消除重复行
+在select后面列前使用distinct可以消除重复的行
+select distinct gender from students;
+
+
+where条件判断：
+1丶比较运算符
+等于=
+大于>
+大于等于>=
+小于<
+小于等于<=
+不等于!=或<>
+
+查询编号大于3的学生
+select * from students where id>3;
+查询没被删除的学生
+select * from students where isdelete=0;
+
+2丶逻辑运算符
+and
+or
+not
+
+查询编号大于3的女同学
+select * from students where id>3 and gender=0;
+查询编号小于4或没被删除的学生
+select * from students where id<4 or isdelete=0;
+
+3丶模糊查询
+like
+%表示任意多个任意字符
+_表示一个任意字符
+
+查询姓黄的学生
+select * from students where name like '黄%';
+查询姓黄并且名字是一个字的学生
+select * from students where name like '黄_';
+查询姓黄或叫靖的学生
+select * from students where name like '黄%' or name like '%靖%';
+
+4丶范围查询
+in表示在一个非连续的范围内
+between ... and ...表示在一个连续的范围内
+
+查询编号是1或3或8的学生
+select * from students where id in(1,3,8);
+查询学生是3至8的学生
+select * from students where id between 3 and 8;
+查询学生是3至8的男生
+select * from students where id between 3 and 8 and gender=1;
+
+5丶空判断
+注意：null与''是不同的
+判空is null
+
+查询没有填写地址的学生
+select * from students where hometown is null;
+判非空is not null
+查询填写了地址的学生
+select * from students where hometown is not null;
+查询填写了地址的女生
+select * from students where hometown is not null and gender=0;
+
+优先级
+小括号，not，比较运算符，逻辑运算符
+and比or先运算，如果同时出现并希望先算or，需要结合()使用
+
+
+
+二丶
+
+1丶聚合
+为了快速得到统计数据，提供了5个聚合函数
+(1)count(*)表示计算总行数，括号中写星与列名，结果是相同的
+查询学生总数
+select count(*) from students;
+(2)max(列)表示求此列的最大值
+查询女生的编号最大值
+select max(id) from students where gender=0;
+(3)min(列)表示求此列的最小值
+查询未删除的学生最小编号
+select min(id) from students where isdelete=0;
+(4)sum(列)表示求此列的和
+查询男生的编号之后
+select sum(id) from students where gender=1;
+(5)avg(列)表示求此列的平均值
+查询未删除女生的编号平均值
+select avg(id) from students where isdelete=0 and gender=0;
+
+2丶分组
+(1)丶简单分组:
+按照字段分组，表示此字段相同的数据会被放到一个组中
+分组后，只能查询出相同的数据列，对于有差异的数据列无法出现在结果集中
+可以对分组后的数据进行统计，做聚合运算
+语法：
+select 列1,列2,聚合... from 表名 group by 列1,列2,列3...
+查询男女生总数
+select gender as 性别,count(*)
+from students
+group by gender;
+查询各城市人数
+select hometown as 家乡,count(*)
+from students
+group by hometown;
+(2)丶分组后筛选:
+having的用法
+语法：
+select 列1,列2,聚合... from 表名
+group by 列1,列2,列3...
+having 列1,...聚合...
+
+		having后面的条件运算符与where的相同
+查询男生总人数
+方案一
+select count(*)
+from students
+where gender=1;
+-----------------------------------
+方案二：
+select gender as 性别,count(*)
+from students
+group by gender
+having gender=1;
+
+对比where与having
+where是对from后面指定的表进行数据筛选，属于对原始数据的筛选
+having是对group by的结果进行筛选
+
+
+3丶排序
+为了方便查看数据，可以对数据进行排序
+语法：
+select * from 表名
+order by 列1 asc|desc,列2 asc|desc,...
+将行数据按照列1进行排序，如果某些行列1的值相同时，则按照列2排序，以此类推
+默认按照列值从小到大排列
+asc从小到大排列，即升序
+desc从大到小排序，即降序
+查询未删除男生学生信息，按学号降序
+select * from students
+where gender=1 and isdelete=0
+order by id desc;
+查询未删除科目信息，按名称升序
+select * from subject
+where isdelete=0
+order by stitle;
+
+4丶分页
+获取部分行
+当数据量过大时，在一页中查看数据是一件非常麻烦的事情
+语法
+select * from 表名
+limit start,count;
+
+已知：每页显示m条数据，当前显示第n页
+select * from students
+where isdelete=0
+limit (n-1)*m,m
+
+总结
+完整的select语句：
+select distinct *
+from 表名
+where ....
+group by ... having ...
+order by ...
+limit start,count
+
+执行顺序为:
+	。from 表名
+	。inner|left|right join ... on ...[在此处取别名的话]
+	。where ...
+	。group by ...
+	。select distinct *  [在这里也必须用别名！！]
+	。having ...
+	。order by ...
+	。limit start,count
+实际使用中，知识某些部分的组合，但是要按照上面的执行顺序;
+
+
+二丶 高级语法
+关键字 inner join,  left join , right join;
+1，外键的创建:
+create table scores(
+id int primary key auto_increment not null,
+stuid int ,
+subid int ,
+score decimal(4,1)
+foreign key(stuid) references students(id)
+foreign key(subid) references subjests(id)
+);
+添加语法
+alter table 表名 add constraint 随便命名 foreign key(外键字段名) references 外表名字(主键字段名)
+
+eg: alter table scores add comstraint fk_id foreign key(stuid) references students(id)
+
+
+外键的级联操作:
+在删除students表的数据时，如果这个id值在scores中已经存在，则会抛出异常；
+推荐使用逻辑删除， 还可以解决这个问题；
+可以创建表时指定级联操作，也可以创建表后再修改外键的级联操作；
+
+
+查询学生姓名，课程，分数
+select students.name,subjects.stitle,scores.scor
+from scores
+inner join students on scores.stuid=students.id
+inner join subjects on scores.subid=subjects.id;
+
+查询男生的姓名、总分
+select students.sname,avg(scores.score)
+from scores
+inner join students on scores.stuid=students.id
+where students.gender=1
+group by students.sname;
+
+查询未删除科目的名称、最高分、平均分
+select subjects.stitle,avg(scores.score),max(scores.score)
+from scores
+inner join subjects on scores.subid=subjects.id
+where subjects.isdelete=0
+group by subjects.stitle;
+
+总结
+完整的select语句：
+select distinct *
+from 表1  inner|left|right join 表2 on 表1和表2的关系
+where ....
+group by ... having ...
+order by ...
+limit start,count
+
+2，自关联：
+创建自关联
+create table ares(
+id int primary key auto_increment not null,
+title varchar(20),
+pid int,
+foreign key(pid) references ares(id)
+);
+
+查询山西省有多少市:
+select * from areas
+where pid=(select id from areas where title like "山西省");
+
+查询总共有多少省:
+select count(*) from areas pid is null;
+
+显示山西省的所有市区
+select sheng.id,sheng.title as stitle,shi.title as shititle from areas as sheng 
+inner join areas as shi on sheng.id=shi.pid
+where sheng.pid is null and sheng.title like "山西省"
+limit 0,100;
+显示所有省以及对应的市区
+select sheng.id,sheng.title as stitle,shi.title as shititle from areas as sheng 
+inner join areas as shi on sheng.id=shi.pid
+where sheng.pid is null
+limit 0,100;
+
+3，视图存储：
+关键字 view
+语法： create view 新名字 as
+。相当于创建一个新的表 
+。对于复杂的查询，在多次使用后，维护是一件非常麻烦的事情
+。解决：定义视图
+。视图本质就是对查询的一个封装
+。定义视图
+create view v_stu_sub_sco as
+select stu.id,stu.name,
+sub.stitle,sco.score
+from scores as sco
+inner join students as stu on stu.id=sco.stuid
+inner join subjects as sub on sub.id =sco.subid;
+。视图的用途就是查询
+
+
+4，事物：
+。当一个业务逻辑需要多个sql完成时，如果其中某条sql语句出错，则希望整个操作都退回
+。使用事务可以完成退回的功能，保证业务逻辑的正确性
+。事务四大特性(简称ACID)
+   .原子性(Atomicity)：事务中的全部操作在数据库中是不可分割的，要么全部完成，要么均不执行
+   .一致性(Consistency)：几个并行执行的事务，其执行结果必须与按某一顺序串行执行的结果相一致
+   .隔离性(Isolation)：事务的执行不受其他事务的干扰，事务执行的中间结果对其他事务必须是透明的
+   .持久性(Durability)：对于任意已提交事务，系统必须保证该事务对数据库的改变不被丢失，即使数据库出现故障
+。要求：表的类型必须是innodb或bdb类型，才可以对此表使用事务
+
+开启begin;--->然后创建一个临时储存表，原数据不发生变化
+提交commit;--->提交数据以后数据被修改
+回滚rollback;--->是临时创建的储存表被销毁，原数据不变
+
+
+
+
+
+

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<script type="text/javascript " src='js/jquery-1.12.4.min.js'></script>
+	<script type="text/javascript">
+		$(function(){
+
+
+			//不仅可以设置样式，还可以读取样式;
+			// alert($('#div').css('fontSize'));
+
+			// $('#div').css({fontSize:'20px',backgroundColor:'red'});
+
+			// alert($('#div').css('fontSize'));
+			 
+			 //添加一个box样式
+			// $('#div1').addClass('box');
+			//移除单个样式
+			// $('#div1').removeClass('div1');
+			//移除多个样式
+			// $('#div1').removeClass('div1 box');
+			
+		});
+		
+	</script>
+
+	<style type='text/css'>
+		.box{
+			width: 100px;
+			height: 100px;
+			background-color: red;
+		}
+	
+	</style>
+	
+	
+</head>
+<body>
+	<div id="div1" class='div1'>这是一个div</div>
+</body>
+</html>

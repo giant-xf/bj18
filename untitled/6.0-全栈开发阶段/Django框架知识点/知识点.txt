@@ -1,0 +1,361 @@
+MVC:
+M:Model,模型， 和数据库进行交互。
+V:View,视图， 产生html页面。
+C:Controller,控制器, 接收请求，进行处理，与M和V进行交互，返回应答。
+
+Django MVT：
+M:Model,模型， 和数据库进行交互。
+V:View,视图， 产生html页面。
+T:Template,模板， 和MVC中V功能相同，产生html页面。
+
+Django ORM框架
+O(objects):类和对象。
+R(Relation):关系，关系数据库中的表格。
+M(Mapping):映射。
+Django ORM框架的功能：
+a)	建立模型类和表之间的对应关系，允许我们通过面向对象的方式来操作数据库。
+b)	根据设计的模型类生成数据库中的表格。
+c)	通过方便的配置就可以进行数据库的切换
+
+工程项目:
+命令：django-admin startproject 项目名
+
+__init__.py: 说明test1是一个python包。
+settings.py: 项目的配置文件。
+urls.py: 进行url路由的配置。
+wsgi.py: web服务器和Django交互的入口。
+manage.py:  项目的管理文件。
+
+应用文件:
+python manage.py startapp 应用名
+
+__init__.py: 说明目录是一个Python模块。
+models.py: 写和数据库项目的内容, 设计模型类。
+views.py: ，接收请求，进行处理，与M和T进行交互，返回应答。
+定义处理函数，视图函数。
+tests.py: 写测试代码的文件。
+admin.py: 网站后台管理相关的文件。
+
+
+一切配置好以后：python manage.py runserver启动服务器
+
+
+
+(M: models)数据库模型建立:
+
+1)	生成迁移文件
+命令：python manage.py makemigrations
+
+2)	执行迁移生成表
+命令：python mange.py migrate
+根据迁移文件生成表。
+生成表名的默认格式：
+	应用名_模型类名小写
+
+批量执行sql语句: source c:\\area.sql
+
+通过模型类操作数据表
+进入项目shell的命令:
+	python manage.py shell
+首先导入模型类：
+	from booktest.models import BookInfo,HeroInfo
+
+1)向booktest_bookinfo表中插入一条数据。
+	b = BookInfo() #定义一个BookInfo类的对象
+	b.btitle ='天龙八部' #定义b对象的属性并赋值
+	b.bpub_date = date(1990,10,11) 
+	b.save() #才会将数据保存进数据库
+2) 查询出booktest_bookinfo表中id为1的数据。
+	b = BookInfo.objects.get(id=1) 
+3) 在上一步的基础上改变b对应图书的出版日期。
+	b.bpub_date = date(1989,10,21)
+	b.save() #才会更新表格中的数据
+4) 紧接上一步，删除b对应的图书的数据。
+	b.delete() #才会删除
+5) 向booktest_heroInfo表中插入一条数据。
+	h = HeroInfo()
+	h.hname = '郭靖'
+	h.hgender = False
+	h.hcomment = ‘降龙十八掌’
+	b2 = BookInfo.objects.get(id=2)
+	h.hbook = b2  #给关系属性赋值，英雄对象所属的图书对象		
+		h.hbook是一个对象
+	h.save() 
+6) 查询图书表里面的所有内容。
+	BookInfo.objects.all()
+	HeroInfo.objects.all()
+	返回的是对象
+
+
+1) 查询出id为2的图书中所有英雄人物的信息。
+	b = BookInfo.objects.get(id=2)
+	b.heroinfo_set.all() #查询出b图书中所有英雄人物的信息
+	
+	b.heroinfo_set.set(id =1) #查询出b图书中英雄人物id = 1的英雄对象
+
+
+
+
+后台管理：
+1)本地化
+	语言和时区的本地化。
+	修改settings.py文件。
+2)创建管理员
+	命令：python manage.py createsuperuser
+3)注册模型类
+	在应用下的admin.py中注册模型类。
+	告诉djang框架根据注册的模型类来生成对应表管理页面。
+	b = BookInfo()
+	str(b)  更改名字的话创建一个魔法方法 __str__
+4)自定义管理页面
+	自定义模型管理类。模型管理类就是告诉django在生成的管理页面上显示哪些内容。
+
+
+(V:views)视图函数的使用:
+views中函数定义:
+	from django.shortcuts import rander,redirect #rander模板类容处理函数，导入重定义函数
+	from django.http import HttpResponse,HttpResponseRedirect
+	from booktest.models import BookInfo,HeroInfo #导入图书类和英雄类
+	def index(request):
+		#进行处理。。。
+		return HttpResponse('hello python')
+
+		#render处理机制
+		# 1.加载模板文件，模板对象
+		# 2.定义模板上下文: 给模板文件传递数据
+		# 3.模板渲染: 产生标准的html类容
+		# 4.返回给浏览器
+		return reder('booktest/index.html',{ }) #传参给模板中的显示HTML文件
+
+函数定义完后:
+	进行url的配置，
+	1.在项目中的urls.py中配置url(r'^ ',include('booktest.urls'))，
+	2.在app中urls.py中进行配置
+	from django.conf.urls import  url # 导入url路由配置模块
+	from booktest import views # 导入视图模块
+
+	urlpatterns =[
+    		# 通过url函数设置url路由配置，首先需要在项目的urls.py中设置
+    		url(r'^index$',views.index),  # 建立/index与视图之间联系
+    		url(r'^index2$',views.index2),
+    		url(r'^books$',views.show_books), # 显示图书信息
+    		url(r'^books/(\d+)$',views.detail), # 显示英雄信息,将需要传入的参数分组，
+	]
+
+然后再整理templates中的index.html来显示:
+	{% for book in books %}
+        	<li>{{ book.btitle }}--<a href="/delete{{ book.id }}">删除</a></li>
+    	{% empty %}
+        	<li>没有图书信息</li>
+    	{% endfor %}
+
+
+
+(T: templates)模版的使用:
+	需要在setting.py中配置路径
+	
+
+
+查询函数 
+get: 返回满足条件的一条数据，只能是一条，返回值是一个模型对象
+all: 返回所有数据，返回值是一个QuerySet查询集
+filter: 返回所有满足条件的数据，可以多条，返回值是一个QuerySet查询集
+exclude: 返回不满足条件的数据，返回值是一个QuerySet查询集
+order_by: 对查询结果进行排序，返回值是一个QuerySet查询集
+
+判等条件: exact
+模糊查询: contain，结尾 endswith 开头:startswith
+空查询: isnull ，Flash为非空，True为空
+范围查询: in，id__in=[1,2,5]
+比较查询: gt 大于，lt 小于，gte 大于等于,lte 小于等于
+日期查询: year,month,day,date(1999,1,1)
+
+Q对象，对多个条件进行& | ~ 运算
+eg ： 
+	Q（id__gt=2）| Q（bread=30）
+	Q（id__gt=2）& Q（bread=30）等价于 id__gt=2,bread=30
+       ~(Q（id__gt=2）| Q（bread=30))
+
+F对象，对用于类属性之间的比较
+	BookInfo.objects.filter(bread__gt=F('bcomment'))
+
+Sum Count Avg max Min count
+aggregate：调用这个函数来使用聚合。 返回值是一个字典
+
+也可以对一个查询集进行取下标或者切片操作来限制查询集的结果。
+
+使用前需先导入聚合类：
+例：查询所有图书的数目。
+BookInfo.objects.all().aggregate(Count('id'))
+{'id__count': 5}
+例：查询所有图书阅读量的总和。
+BookInfo.objects.aggregate(Sum('bread'))
+
+BookInfo.objects.count()
+7
+
+使用前需先导入包：
+ from django.db.models import Sum,Count,Max,Min,Avg,Q,F
+
+
+1）	一对多关系
+例：图书类-英雄类 
+models.ForeignKey() 定义在多的类中。
+2）	多对多关系
+例：新闻类-新闻类型类 体育新闻 国际新闻
+models.ManyToManyField() 定义在哪个类中都可以。
+3）	一对一关系
+例：员工基本信息类-员工详细信息类. 员工工号
+models.OneToOneField定义在哪个类中都可以。
+
+11.	关联查询（一对多）
+例：查询id为1的图书关联的英雄的信息。
+b = BookInfo.objects.get(id=1)
+b.heroinfo__set.all()
+通过模型类查询：
+HeroInfo.objects.filter(hbook__id=1)
+
+例：查询id为1的英雄关联的图书信息。
+b = HeroInfo.objects.set(id=1)
+b.hbook
+通过模型类查询：
+BookInfo.objects.filter(heroinfo__id=1)
+
+关联查询（自关联是一种特殊的一对多的关系。）:
+一对多，
+	由一查多---------->HeroInfo.objects.filter(hbook__id=1)
+	由多查一---------->BookInfo.objects.filter(heroinfo__id=1)
+例：查询图书信息，要求图书关联的英雄的描述包含'八'。
+BookInfo.objects.filter(heroinfo__hcomment='八')
+例：查询图书信息，要求图书中的英雄的id大于3.
+BookInfo.objects.filter(heroinfo__id__gt=3)
+例：查询书名为“天龙八部”的所有英雄。
+HeroInfo.objects.filter(hbook__btitle='天龙八部')
+例：显示广州市的上级地区和下级地区。(地区表：id, atitle, aParent_id;)
+# 1.先查询广州
+area = AreaInfo.objects.get(atitle='广州市')
+# 2.查询广州的父级省
+parent = area.aParent
+# 3.查询广州的下级区
+childen = area.areainfo_set.all()
+
+总结：
+通过多类的条件查询一类的数据：
+	一类名.objects.filter(多类名小写__多类属性名__条件名) 
+通过一类的条件查询多类的数据：
+	多类名.objects.filter(关联属性__一类属性名__条件名)
+
+
+自定义模型管理器类
+1)	自定义一个管理器类，这个类继承models.Manger类。
+2)	再在具体的模型类里定义一个自定义管理器类的对象。
+应用场景：
+1）	改变查询的结果集。
+比如调用BookInfo.books.all()返回的是没有删除的图书的数据。
+2）	添加额外的方法。
+管理器类中定义一个方法帮我们操作模型类对应的数据表。
+使用self.model()就可以创建一个跟自定义管理器对应的模型类对象。
+
+元选项：
+需要在模型类中定义一个元类Meta,在里面定义一个类属性db_table就可以指定表名。
+
+
+视图：
+
+404：找不到页面，关闭调试模式之后，默认会显示一个标准的错误页面，如果要显示自定义的页面，则需要的templates目录下面自定义一个404.html文件。
+a)	url没有配置
+b)	url配置错误
+500: 服务器端的错误。
+a)	视图出错
+网站开发完成需要关闭调试模式，在settings.py文件中：
+	DEBUG=False
+	ALLOWED_HOST=[ '*']
+
+
+request中的几个常用参数：
+path：一个字符串，表示请求的页面的完整路径，不包含域名和参数部分。
+method：一个字符串，表示请求使用的HTTP方法，常用值包括：'GET'、'POST'。
+在浏览器中给出地址发出请求采用get方式，如超链接。
+在浏览器中点击表单的提交按钮发起请求，如果表单的method设置为post则为post请求。
+	#用法： print(request.method)
+    		print(request.path)
+
+ajax:
+异步的javascript。在不全部加载某一个页面部的情况下，对页面进行局的刷新，ajax请求都在后台。
+图片，css文件，js文件都是静态文件。
+静态文件需要在setting中设置路径:  STATICFILES_DIRS = [os.path.join(BASE_DIR,'static')]
+1)	发起ajax请求：jquery发起：
+		将页面的表单或者json数据发送给视图
+2)	执行相应的视图函数，返回json内容：
+		返回一个json数据:正确时返回{ 'res':1}，错误时{ 'res':0}
+3)	执行相应的回调函数。通过判断json内容，进行相应处理。
+		接受res==1时跳转到首页，else：局部刷新提示用户名或密码错误
+1)	显示出登录页面
+a)	设计url，通过浏览器访问 http://127.0.0.1:8000/login_ajax 时显示登录页面。
+具体实现流程：
+b)	设计url对应的视图函数login_ajax。
+c)	编写模板文件login_ajax.html。
+在里面写jquery代码发起ajax请求。
+2)	登录校验功能
+a)	设计url,点击登录页的登录按钮发起请求http://127.0.0.1:8000/login_ajax_check时进行登录校验。
+b)	设计url对应的视图函数login_ajax_check。
+接收post提交过来的数据。
+进行登录校验，并返回json内容。 JsonRepsone
+Json格式如下：
+{'res':'1'} #表示登录成功
+{'res':'0'} #表示登录失败
+
+
+捕获url参数：
+1)	位置参数
+位置参数，参数名可以随意指定
+2)	关键字参数：在位置参数的基础上给正则表达式组命名即可。
+?P<组名>
+关键字参数，视图中参数名必须和正则表达式组名一致.
+
+
+cookie是由服务器生成，存储在浏览器端的一小段文本信息。
+cookie的特点：
+1)	以键值对方式进行存储。
+2)	通过浏览器访问一个网站时，会将浏览器存储的跟网站相关的所有cookie信息发送给该网站的服务器。request.COOKIES
+3)	cookie是基于域名安全的。www.baidu.com www.tudou.com
+4)	cookie是有过期时间的，如果不指定，默认关闭浏览器之后cookie就会过期。
+
+session存储在服务器端。
+session的特点：
+1) session是以键值对进行存储的。
+2) session依赖于cookie。唯一的标识码保存在sessionid cookie中。
+3) session也是有过期时间，如果不指定，默认两周就会过期。
+
+GET：QueryDict类型对象，类似于字典，包含get请求方式的所有参数。
+POST：QueryDict类型对象，类似于字典，包含post请求方式的所有参数。
+FILES：一个类似于字典的对象，包含所有的上传文件。在setting中设置
+COOKIES：一个标准的Python字典，包含所有的cookie，键和值都为字符串。
+session：一个既可读又可写的类似于字典的对象，表示当前的会话，只有当Django 启用会话的支持时才可用，详细内容见"状态保持"。
+
+8.3 cookie和session的应用场景
+cookie:记住用户名。安全性要求不高。
+session:涉及到安全性要求比较高的数据。银行卡账户,密码
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

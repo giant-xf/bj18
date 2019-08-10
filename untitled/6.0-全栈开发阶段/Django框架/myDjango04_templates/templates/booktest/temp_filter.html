@@ -1,0 +1,36 @@
+
+<!DOCTYPE html>
+{% load filters %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>模板过滤器</title>
+    <style>
+        .yellow{
+            background-color: yellow;
+        }
+        .green{
+            background-color: green;;
+        }
+        .blue{
+            background-color: blue;
+        }
+    </style>
+</head>
+<body>
+<ul>
+    {% for book in books %}
+    {# {% if forloop.counter <= 3 %}#}
+    {% if forloop.counter|mod  %}
+        <li class="green">{{ forloop.counter}}--{{ book.btitle}}--{{book.bpub_date|date:'Y年-n月-j日'}}</li>
+    {% elif forloop.counter <= 6 %}
+        <li class="blue">{{ forloop.counter}}--{{ book.btitle}}--{{book.bpub_date}}</li>
+    {% else%}
+        <li class="yellow">{{ forloop.counter}}--{{ book.btitle}}--{{book.bpub_date}}</li>
+    {% endif %}
+    {% endfor %}
+
+
+</ul>
+</body>
+</html>

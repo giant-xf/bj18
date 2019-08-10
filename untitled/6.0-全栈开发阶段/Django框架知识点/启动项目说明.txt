@@ -1,0 +1,18 @@
+启动mysql:
+	service mysql start
+	service mysql stop
+	service mysql restart
+
+启动redis:
+sudo redis-server /etc/redis/redis.conf
+
+启动celery:
+/dailyfresh$  celery -A celery_tasks.tasks worker -l info
+
+启动nginx:
+sudo /usr/local/nginx/sbin/nginx 
+
+启动FastDFS:
+启动tracker 和 storage
+sudo service fdfs_trackerd start
+sudo service fdfs_storaged start

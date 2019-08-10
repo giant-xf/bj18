@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<script type="text/javascript " src='js/jquery-1.12.4.min.js'></script>
+	<script type="text/javascript">
+		$(function(){
+
+			var $div = $('<div>这是一个div元素</div>');
+
+			//append()和appendTo()：在现存元素的内部，从后面插入元素
+			//将$div加入到#div中
+			// $div.appendTo($('#div'));
+			$('#div').append($div);
+
+			// 删除节点
+			// $div.remove();
+			// $('#div').remove();
+		});
+		
+	</script>
+
+</head>
+<body>
+	<div id="div">这是一个div</div>
+</body>
+</html>

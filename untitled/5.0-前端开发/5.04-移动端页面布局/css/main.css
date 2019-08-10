@@ -1,0 +1,252 @@
+body{
+            margin: 0;
+            padding: 0;
+        }
+
+.main_wrap{
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background-color: gold;
+}
+
+.header{
+    height: 2.5rem;
+    background-color:#37ab40;
+    position: relative;
+}
+
+.header .logo{
+    display: block;
+    width: 4.45rem;
+    height: 1.8rem;
+    margin: 0.35rem auto;
+}
+
+.header .logo img{
+    width: 100%;
+}
+
+.header .search{
+    position: absolute;
+    width: 1.35rem;
+    height: 1.35rem;
+    right: 0.75rem;
+    top: 0.625rem;
+    background:url(../image/icons.png) -0.01rem -17.2rem no-repeat;
+    background-size: 2.0rem 30.0rem;
+}
+
+.center_wrap{
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 2.5rem;
+    bottom: 2.5rem;
+    overflow-x: hidden;
+    overflow-y: auto;
+    background-color: #efefef;
+} 
+
+
+.slide img{
+    width: 100%;
+    height: 6.75rem
+}
+
+.menu_con{
+    height: 9.75rem;
+    background-color: #fff;
+    margin-top: 0.5rem;
+    overflow: hidden;
+}
+
+.menu{
+    width: 19rem;
+    height: 8.1rem;
+    margin:0.875rem 0 0 1.375rem;
+}
+
+.menu li{
+    width: 2.75rem;
+    height: 4.25rem;
+    float: left;
+    margin-right: 1.675rem;
+
+}
+
+.menu li a{
+    display: block;
+    width: 2.75rem;
+    height: 2.75rem;
+    background:url(../image/icons.png) 0.6rem 0.3rem no-repeat;
+    background-size: 2.0rem 30.0rem;
+    border-radius: 50%;
+    background-color: #98a2d9;
+}
+
+.menu li h2{
+    height: 1.1rem;
+    font:bold 14px/1.1rem "Microsoft Yahei";
+    text-align: center;
+    color: #666;
+}
+
+.menu li:nth-child(2) a{
+    background-position: 0.6rem -1.85rem;
+    border-radius: 50%;
+    background-color: #f18a8c;
+}
+
+.menu li:nth-child(3) a{
+    background-position: 0.6rem -4rem;
+    border-radius: 50%;
+    background-color: #dd8ee9;
+}
+
+.menu li:nth-child(4) a{
+    background-position: 0.6rem -6.4rem;
+    border-radius: 50%;
+    background-color: #5ad7fc;
+}
+
+.menu li:nth-child(5) a{
+    background-position: 0.6rem -8.5rem;
+    border-radius: 50%;
+    background-color: #fec53f;
+}
+
+.menu li:nth-child(6) a{
+    background-position: 0.6rem -10.7rem;
+    border-radius: 50%;
+    background-color: #52d16e;
+}
+
+.menu li:nth-child(7) a{
+    background-position: 0.5rem -1.85rem;
+    border-radius: 50%;
+    background-color: #ff86b9;
+}
+
+.menu li:nth-child(8) a{
+    background-position: 0.6rem -1.85rem;
+    border-radius: 50%;
+    background-color: #f0a748;
+}
+
+.common_model{
+    /*background-color: #fff;*/
+    margin:0.2rem 0;
+}
+
+.common_model .common_title h3{
+    margin: 0.8rem 0 0.5rem 0.8rem;
+    border-left: 0.25rem solid #fbc83d;
+    font: bold 15px/0.9rem "Microsoft Yahei";
+    color:#fbc83d;
+    text-indent: 0.4rem;
+}
+
+.common_model .common_title a{
+    font: 12px/0.9rem "Microsoft Yahei";
+    color:#666;
+    margin-top: 0.7rem; 
+    margin-right: 0.8rem;
+}
+
+.banner{
+    width: 18.75rem;
+    height: 9rem;
+    margin: 0.5rem auto 0;
+    background-color: #fff;
+}
+.banner img{
+    width: 100%;
+}
+.goods_list{
+    width: 18.75rem;
+    height: 9.35rem;
+    /*background-color: gold;*/
+    margin: 0.5rem auto 0.7rem;
+}
+
+.goods_list li{
+    position: relative;
+    float: left;
+    width: 6.2rem;
+    height: 11.35rem;
+    background-color: #fff;
+    border-right: 1px solid #e7e7e7;
+}
+
+.goods_list li img{
+    width: 100%;
+}
+.goods_list .goods_name{
+    width: 5.0rem;
+    /*可以设置放不下的字体为省略号*/
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    
+    font:15px/15px "Microsoft Yahei";
+    color: #666;
+    margin: 0.75rem auto 0; 
+}
+
+.goods_list .goods_unit{
+    width: 5.0rem;
+    font:13px/13px "Microsoft Yahei";
+    color: #888;
+    margin: 0.5rem auto 0;
+}
+
+.goods_list .goods_price{
+    width: 5.0rem;
+    font:15px/15px "Microsoft Yahei";
+    color: #ff4400;
+    margin: 0.5rem auto 0;
+}
+
+.goods_list .add_chart{
+    position: absolute;
+    right: 0.675rem;
+    bottom: 1.0rem;
+    width: 1.7rem;
+    height: 1.7rem;
+    box-sizing: border-box;
+    border:0.25rem solid #f0f0f0;
+/*    background-color: #f0f0f0;*/
+    border-radius: 50%;
+}
+
+.goods_list .add_chart p{
+    font:bold 20px/20px 'Microsoft Yahei' ;
+    color: #ff4400;
+    text-align: center;
+}
+
+@media(min-width: 380px){
+    .goods_list .goods_price{
+        font:25px/25px "Microsoft Yahei";
+    }
+    .goods_list .goods_unit{
+        font:23px/23px "Microsoft Yahei";
+    }
+}
+
+
+
+.footer{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 2.5rem;
+    /*width: 100%;*/
+    background-color: #fff;
+}
+
+

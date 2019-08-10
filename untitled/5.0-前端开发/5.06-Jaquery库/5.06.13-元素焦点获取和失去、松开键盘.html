@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<script type="text/javascript " src='js/jquery-1.12.4.min.js'></script>
+	<script type="text/javascript">
+		$(function(){
+
+			//元素失去焦点
+			$('#text01').blur(function() {
+				// alert('blur');
+			})
+
+			//元素获得焦点
+			$('#text01').focus(function() {
+				// alert('focus');
+			})
+
+			//表单元素值发生改变
+			// 灵敏度低，可以运用于将用户输入的账号与后台数据库进行对比，提示用户注册的账号是否已经存在
+			$('#text01').change(function() {
+				// alert('change');
+			})
+
+			
+			// keyup() 松开键盘
+			// 灵敏度高，可以运用于将用户输入的账号与后台数据库进行对比，提示用户注册的账号是否已经存在
+			$('#text01').keyup(function() {
+				alert('keyup');
+			})
+
+		});
+		
+	</script>
+
+</head>
+<body>
+	<input type="text" id="text01" value="" placeholder="请输入">
+</body>
+</html>

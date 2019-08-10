@@ -1,0 +1,183 @@
+jquery选择器 
+jquery选择器可以快速地选择元素，选择规则和css样式相同，使用length属性判断是否选择成功。
+
+$(document) //选择整个文档对象
+$('li') //选择所有的li元素
+$('#myId') //选择id为myId的网页元素
+$('.myClass') // 选择class为myClass的元素
+$('input[name=first]') // 选择name属性等于first的input元素
+$('#ul1 li span') //选择id为为ul1元素下的所有li下的span元素
+
+
+
+对选择集进行修饰过滤(类似CSS伪类)
+$('#ul1 li:first') //选择id为ul1元素下的第一个li
+$('#ul1 li:odd') //选择id为ul1元素下的li的奇数行
+$('#ul1 li:eq(2)') //选择id为ul1元素下的第3个li
+$('#ul1 li:gt(2)') // 选择id为ul1元素下的前三个之后的li
+$('#myForm :input') // 选择表单中的input元素
+$('div:visible') //选择可见的div元素
+
+
+
+对选择集进行函数过滤
+$('div').has('p'); // 选择包含p元素的div元素
+$('div').not('.myClass'); //选择class不等于myClass的div元素
+$('div').filter('.myClass'); //选择class等于myClass的div元素
+$('div').first(); //选择第1个div元素
+$('div').eq(5); //选择第6个div元素
+
+
+
+选择集转移
+$('div').prev(); //选择div元素前面的第一个元素，不能筛选
+$('div').prevAll('p');选择div元素前面的所有p元素
+$('div').next(); //选择div元素后面的第一个元素，不能筛选
+$('div').nextAll(); //选择div元素后面的所有p元素
+$('div').closest('form'); //选择离div最近的那个form父元素
+$('div').parent(); //选择div的父元素
+$('div').children(); //选择div的所有子元素
+$('div').siblings(); //选择div的同级元素
+$('div').find('.myClass'); //选择div内的class等于myClass的元素
+
+
+
+操作样式类名
+$("#div1").addClass("divClass2") //为id为div1的对象追加样式divClass2
+$("#div1").removeClass("divClass")  //移除id为div1的对象的class名为divClass的样式
+$("#div1").removeClass("divClass divClass2") //移除多个样式
+$("#div1").toggleClass("anotherClass") //重复切换anotherClass样式
+
+
+
+jquery属性操作
+1、html() 取出或设置html内容
+// 取出html内容
+var $htm = $('#div1').html();
+// 设置html内容
+$('#div1').html('<span>添加文字</span>');
+
+2、text() 取出或设置text内容
+// 取出文本内容
+var $htm = $('#div1').text();
+// 设置文本内容
+$('#div1').text('<span>添加文字</span>');
+
+3、attr() 取出或设置某个属性的值
+// 取出图片的地址
+var $src = $('#img1').attr('src');
+// 设置图片的地址和alt属性
+$('#img1').attr({ src: "test.jpg", alt: "Test Image" });
+
+4、prop()取出或设置checkbox的属性值
+//取出checked的值true或false
+var $checked = $('#checkbox').prop();
+//设置checked的值true或false
+$('#checkbox').prop({checked:true});
+
+5、var()获取表单中的内容
+var txt = $('#txt1').val();
+
+
+绑定click事件
+给元素绑定click事件，可以用如下方法：
+
+$('#btn1').click(function(){
+
+    // 内部的this指的是原生对象
+
+    // 使用jquery对象用 $(this)
+
+})
+
+
+jquery特殊效果:
+fadeOut() 淡出
+fadeToggle() 切换淡入淡出
+hide() 隐藏元素
+show() 显示元素
+toggle() 依次展示或隐藏某个元素
+slideDown() 向下展开
+slideUp() 向上卷起
+slideToggle() 依次展开或卷起某个元素
+
+
+/*
+参数：
+1、属性设置{param1: value1，param2: value2}
+2、speed 时间  ms
+3、swing  默认值  开始和结束速度慢，中间快
+4、回调函数
+*/
+animate({width:200,height:200},1000,function(){})
+
+each(function(){})是个循环语句;
+
+尺寸相关、滚动事件
+1、获取和设置元素的尺寸
+width()、height()    获取元素width和height  
+innerWidth()、innerHeight()  包括padding的width和height  
+outerWidth()、outerHeight()  包括padding和border的width和height  
+outerWidth(true)、outerHeight(true)   包括padding和border以及margin的width和height
+
+2、获取元素相对页面的绝对位置
+offset()
+
+3、获取可视区高度
+$(window).height();
+
+4、获取页面高度
+$(document).height();
+
+5、获取页面滚动距离
+$(document).scrollTop();  
+$(document).scrollLeft();
+
+6、页面滚动事件
+$(window).scroll(function(){  
+    ......  
+})
+
+
+
+jquery事件
+事件函数列表：
+blur() 元素失去焦点
+focus() 元素获得焦点
+change() 表单元素的值发生变化
+click() 鼠标单击
+dblclick() 鼠标双击
+mouseover() 鼠标进入（进入子元素也触发）
+mouseout() 鼠标离开（离开子元素也触发）
+mouseenter() 鼠标进入（进入子元素不触发）
+mouseleave() 鼠标离开（离开子元素不触发）
+hover() 同时为mouseenter和mouseleave事件指定处理函数
+mouseup() 松开鼠标
+mousedown() 按下鼠标
+mousemove() 鼠标在元素内部移动
+keydown() 按下键盘
+keypress() 按下键盘
+keyup() 松开键盘
+load() 元素加载完毕
+ready() DOM加载完成
+resize() 浏览器窗口的大小发生改变
+scroll() 滚动条的位置发生变化
+select() 用户选中文本框中的内容
+submit() 用户递交表单
+toggle() 根据鼠标点击的次数，依次运行多个函数
+unload() 用户离开页面
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

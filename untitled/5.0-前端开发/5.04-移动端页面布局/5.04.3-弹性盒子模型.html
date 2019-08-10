@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style type="text/css">
+		ul{
+			margin: 0;
+			padding: 0;
+			list-style: none;
+			border:2px solid #000;
+			width: 300px;
+			height: 500px;
+			margin: 50px auto 0;
+
+			display: flex;
+			/*默认子元素水平靠左排
+			flex-direction: row;*/
+			/*子元素水平靠右排
+			flex-direction: row-reverse;*/
+			/*靠左竖排 
+			flex-direction: column;*/
+			/*倒序竖排
+			flex-direction: column-reverse;*/
+			
+			/*默认值，子元素宽度超过父级宽度时不换行
+			flex-wrap: nowrap;*/
+			/*子元素宽度超过父级宽度时换行
+			flex-wrap: wrap;*/
+			/*子元素宽度超过父级宽度时换行且从底部开始倒序排列
+			flex-wrap:wrap-reverse;*/
+			
+			/*同时设置flex-direction 和 flex-wrap两个值
+			flex-flow: row-reverse wrap;*/
+
+
+			/*整体子元素靠左
+			justify-content: flex-start;*/
+			/*整体子元素靠右
+			justify-content: flex-end;*/
+			/*整体子元素居中
+			justify-content: center;*/
+			/*第一个子元素靠左顶格，最后一个子元素靠右顶格，中间的元素等分距
+			justify-content: space-between;*/
+			/*第一个子元素靠左间距和最后一个子元素靠右间距是中间子元素间距的一半，中间的子元素等分间距
+			justify-content: space-around;*/
+
+			
+			/*整体垂直靠上
+			align-items:flex-start; */
+			/*整体垂直靠下
+			align-items: flex-end;*/
+			/*整体垂直居中
+			align-items: center;*/
+			/*元素内的文字底部对齐，若文字大小不同，导致子元素水平不对齐
+			align-items: baseline;*/
+			/*若子元素不设置高度，n高度被拉伸到和父元素高度相同，需除去自身的margin
+			align-items: stretch;*/
+			/*多行整体靠上
+			align-content: flex-start;*/
+			/*多行整体靠下
+			align-content: flex-end;*/
+			/*多行整体垂直居中
+			align-content: center;*/
+			/*第一行子元素靠上顶格，最后一行子元素靠下顶格，中间子元素等分垂直间距
+			align-content: space-between;*/
+			/*第一行子元素靠上间距和最后一行子元素间距是中间行子元素垂直间距的一半
+			align-content: space-around;*/
+			/*若子元素不设置高度，高度被拉伸到和父元素高度相同
+			align-content: stretch;*/
+
+
+
+/*			配合前面
+			flex-wrap: wrap;
+			justify-content: space-between;
+			justify-content:center;*/
+
+
+
+
+		}
+/*		li:nth-child(2){
+			font-size: 40px;
+		}*/
+		
+		ul li{
+			width: 50px;
+			height: 50px;
+			margin: 10px;
+			line-height: 50px;
+			text-align: center;
+			background-color: gold;
+			/*当有多余的宽度时，每个子元素增长的宽度比例为1*/
+			/*flex-grow: 1;*/
+			/*当宽度不够时，每个子元素减少宽度比例为1*/
+			/*flex-shrink: 1;*/
+
+			/*flex-basis: 20px;*/
+
+		}
+
+		ul li:nth-child(1){
+			/*单独设置第二个元素的增长比例为3*/
+			/*flex-grow:3;*/
+			/*每个子元素减少宽度比例为1.5
+			flex-shrink:1.5;*/
+			/*给2号一个基础的大小*/
+			/*flex-basis: 20px*/
+			/*将2号移到中间位置*/
+			/*align-self: center;	*/
+			/*改变2号元素的排列位置顺序*/
+			order: 2;
+		}
+		ul li:nth-child(2){
+			order: 1;
+		}
+		ul li:nth-child(3){
+			order: 4;
+		}
+		ul li:nth-child(4){
+			order: 3;
+		}
+		ul li:nth-child(5){
+			order: 5;
+		}
+
+	</style>
+</head>
+<body>
+	<ul>
+		<li>1</li>
+		<li>2</li>
+		<li>3</li>
+		<li>4</li>
+		<li>5</li>
+<!-- 		<li>6</li>
+		<li>7</li>
+		<li>9</li>
+		<li>10</li>
+		<li>11</li> -->
+	</ul>
+
+
+</body>
+</html>

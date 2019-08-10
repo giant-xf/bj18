@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<script type="text/javascript">
+	window.onload = function(){
+
+		var oDiv = document.getElementById('div');
+
+		function timeleft(){
+
+			//这里需要获取服务器时间，避免用户自行修改客户端时间
+			var now = new Date();
+			var future = new Date(2019,6,21,10,48,0);
+
+			var lefts = parseInt((future-now)/1000);
+			var day = parseInt(lefts/86400);
+			var hour = parseInt((lefts%86400)/3600);
+			var minute = parseInt(((lefts%86400)%3600)/60);
+			var second = lefts%60;
+
+			if (lefts<=0) {
+			window.location.href = 'http://www.baidu.com';
+			}
+
+			oDiv.innerHTML = '距离2019年6月21日11点还剩:'+day+'日'+hour+'时'+minute+'分'+second+'秒';
+
+			
+		}
+
+
+		timeleft();
+		setInterval(timeleft,1000);
+
+	}
+
+	</script>
+</head>
+<body>
+	<div id="div" class="div"></div>
+</body>
+</html>

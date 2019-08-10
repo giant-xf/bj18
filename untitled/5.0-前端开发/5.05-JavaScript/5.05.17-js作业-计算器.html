@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<script type="text/javascript">
+		window.onload = function(){
+			var oInput1 = document.getElementById('input1');
+			var oInput2 = document.getElementById('input2');
+			var oBtn = document.getElementById('btn');
+			var oSelect = document.getElementById('select01');
+			var aOpt = oSelect.getElementsByTagName('option');
+
+			
+			
+			oBtn.onclick = function(){
+				var a = oInput1.value;
+				var b = oInput2.value;
+				var c = oSelect.value;
+
+				if (a==''||b=='') {
+					alert('请两边输入合理数字');
+					return;
+				}
+				if (c =='/'&&b=='0') {
+					alert('除法运算中被除数不能为 0 ');
+					return;
+				}
+
+				//isNaN判断是否是数字
+				if (isNaN(a)||isNaN(b)) {
+					alert('请输入数字！');
+					return;
+				}
+
+
+				// if (a == '') {
+				// 	a = 0;
+				// }
+				// if (b == '') {
+				// 	b =0;
+				// }
+				
+				
+				// alert(c);
+				switch(c){
+					case '+':
+						alert(add(a,b));
+						break;
+					case '-':
+						alert(xiangjian(a,b));
+						break;
+					case '*':
+						alert(xiangcheng(a,b));
+						break;
+					case '/':
+						alert(xiangchu(a,b));
+						break;
+					case '^':
+						alert(mifang(a,b));
+				}
+			}
+
+
+			function add(a,b){
+				var c = (100*parseFloat(a)+parseFloat(b)*100)/100;
+				return c;
+			}
+
+			function xiangcheng(a,b){
+				var c = ((100*parseFloat(a))*(parseFloat(b)*100))/10000;
+
+				return c;
+			}
+
+			function xiangjian(a,b){
+				var c = (100*parseFloat(a)-parseFloat(b)*100)/100;
+				
+				return c;
+			}
+
+			function xiangchu(a,b){
+				var c = (100*parseFloat(a)/parseFloat(b)*100)/10000;
+				
+				return c;
+			}
+
+			function mifang(a,b){
+				a = parseFloat(a);
+				var s = 1;
+				for(var i = 1 ;i<=b;i++){
+					s =s*a;
+				}
+				return s;
+			}
+
+
+		}
+
+	</script>
+</head>
+<body>
+	<input type="text" name="" id="input1" value="">
+	<select name="" id="select01">
+		<option value="+">+</option>
+		<option value="-">-</option>
+		<option value="*">*</option>
+		<option value="/">/</option>
+		<option value="^">^</option>
+	</select>
+	<input type="text" name="" id="input2" value="">
+	<input type="button" name="" value='运算' id="btn">
+
+</body>
+</html>

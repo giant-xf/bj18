@@ -1,0 +1,138 @@
+1、行间事件（主要用于事件）
+<input type="button" name="" onclick="alert('ok！');">
+
+2、页面script标签嵌入
+<script type="text/javascript">        
+    var a = '你好！';
+    alert(a);
+</script>
+
+3、外部引入
+<script type="text/javascript" src="js/index.js"></script>
+
+变量类型
+
+5种基本数据类型：
+number、string、boolean、undefined、null
+1种复合类型：
+object
+
+
+获取元素的第一种方法
+document.getElementById('')
+
+获取元素的第二种方法 
+document.getElementsByTagName(''),
+获取的是一个选择集，不是数组，但是可以用下标的方式操作选择集里面的dom元素
+
+
+
+操作数组中数据的方法 
+1、获取数组的长度：aList.length;
+2、用下标操作数组的某个数据：aList[0];
+3、join() 将数组成员通过一个分隔符合并成字符串/4
+4、push() 和 pop() 从数组最后增加成员或删除成员
+5、unshift()和 shift() 从数组前面增加成员或删除成员
+6、reverse() 将数组反转
+7、indexOf() 返回数组中元素第一次出现的索引值
+8、splice() 在数组中增加或删除成员
+
+字符串处理方法
+1、字符串合并操作：“ + ”
+2、parseInt() 将数字字符串转化为整数
+3、parseFloat() 将数字字符串转化为小数
+4、split() 把一个字符串分隔成字符串组成的数组
+5、charAt() 获取字符串中的某一个字符
+6、indexOf() 查找字符串是否含有某字符
+7、substring() 截取字符串 用法： substring(start,end)（不包括end）
+8、toUpperCase() 字符串转大写
+9、toLowerCase() 字符串转小写
+
+调试程序的方法
+1、alert
+2、console.log
+3、document.title
+
+定时器在javascript中的作用
+1、制作动画
+2、异步操作
+3、函数缓冲与节流
+
+定时器类型及语法
+
+定时器：
+setTimeout  只执行一次的定时器 
+clearTimeout 关闭只执行一次的定时器
+setInterval  反复执行的定时器
+clearInterval 关闭反复执行的定时器
+
+
+1、直接转换 parseInt() 与 parseFloat()
+
+alert('12'+7); //弹出127
+alert( parseInt('12') + 7 );  //弹出19 
+alert( parseInt(5.6));  // 弹出5
+alert('5.6'+2.3);  // 弹出5.62.3
+alert(parseFloat('5.6')+2.3);  // 弹出7.8999999999999995
+alert(0.1+0.2); //弹出 0.3000000000000004
+alert((0.1*100+0.2*100)/100); //弹出0.3
+alert((parseFloat('5.6')*100+2.3*100)/100); //弹出7.9
+
+2、隐式转换 “==” 和 “-”
+if('3'==3)
+{
+    alert('相等');
+}
+// 弹出'相等'
+alert('10'-3);  // 弹出7
+
+3、NaN 和 isNaN
+alert( parseInt('123abc') );  // 弹出123
+alert( parseInt('abc123') );  // 弹出NaN
+
+1、document
+document.referrer  //获取上一个跳转页面的地址(需要服务器环境)
+
+2、location
+window.location.href  //获取或者重定url地址
+window.location.search //获取地址参数部分
+window.location.hash //获取页面锚点或者叫哈希值
+
+3、Math
+Math.random 获取0-1的随机数
+Math.floor 向下取整
+Math.ceil 向上取整
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

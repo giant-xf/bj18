@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style type='text/css'>
+		.div{
+			font-size: 50px;
+			font-family: 'Microsoft Yahei';
+			color: pink;
+/*			position: fixed;
+			top:40%;
+			left: 10%;*/
+		}
+	</style>
+
+	<script type="text/javascript">
+	window.onload = function(){
+		var oDiv = document.getElementById('div');
+
+		function timego(){
+			var now = new Date();
+			var year = now.getFullYear();
+			var month = now.getMonth()+1;
+			var date = now.getDate();
+			var week = now.getDay();
+			var hour = now.getHours();
+			var minute = now.getMinutes();
+			var second = now.getSeconds();
+
+
+			oDiv.innerHTML = '当前时间是:'+year+'年'+month+'月'+today(date)+'日'+' '+toweek(week)+' '+today(hour)+':'+today(minute)+':'+today(second);
+		}
+
+		timego();
+
+		setInterval(timego,1000);
+
+
+		function toweek(week){
+			switch(week){
+				case 0:
+					return '星期天';
+				case 1:
+					return '星期一';	
+				case 2:
+					return '星期二';
+				case 3:
+					return '星期三';
+				case 4:
+					return '星期四';
+				case 5:
+					return '星期五';
+				case 6:
+					return '星期六';
+			}
+		}
+
+		function today(num){
+			if (num<10) {
+				return '0'+num;
+			}
+			else{
+				return num;
+			}
+
+		}
+
+
+
+	}
+
+	</script>
+</head>
+<body>
+	<div id="div" class="div"></div>
+</body>
+</html>

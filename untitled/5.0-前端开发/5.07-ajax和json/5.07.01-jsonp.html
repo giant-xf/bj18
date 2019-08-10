@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<script type="text/javascript " src='js/jquery-1.12.4.min.js'></script>
+	<script type="text/javascript">
+	//需要在服务器环境
+		$.ajax({
+			url: 'js/data.js',
+			type: 'get',
+			dataType: 'jsonp',
+			jsonpCallback: 'aa'
+		})
+		//正常
+		.done(function(dat){
+			$('#div').html('欢迎'+dat.name+'访问网站');
+		})
+		//报错
+		.fail(function(){
+			alert('报错');
+		})
+		
+	</script>
+
+</head>
+<body>
+	<div id="div">这是一个div</div>
+</body>
+</html>

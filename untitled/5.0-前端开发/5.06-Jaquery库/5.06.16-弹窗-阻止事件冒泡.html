@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style type="text/css">
+		.pop_con{
+			display: none;
+		}
+
+		.pop{
+			width: 400px;
+			height: 300px;
+			background-color: #fff;
+			border: 1px solid #000;
+			position: fixed;
+			top:50%;
+			left: 50%;
+			margin:-150px 0 0 -200px;
+			z-index: 9999;
+		}
+
+		.mask{
+			position: fixed;
+			width: 100%;
+			height: 100%;
+			background-color:#000;
+			left: 0;
+			top:0 ;
+			opacity: 0.2;
+			filter: alpha(opacity=30);
+			z-index: 9990;
+		}
+
+		.btn{
+			position: absolute;
+			top:80%;
+			right: 10%;
+		}
+	</style>
+	<script type="text/javascript " src='js/jquery-1.12.4.min.js'></script>
+	<script type="text/javascript">
+
+		$(function(){
+
+			$('#btn1').click(function(){
+
+				$('#pop').show();
+				return false;
+			});
+
+			$('#btn2').click(function(){
+				
+				$('#pop').hide();
+			});
+
+			$(document).click(function(){
+
+				$('#pop').hide();
+			});
+
+			//阻止弹出的白框里面的事件冒泡
+			$('.pop').click(function(){
+
+				return false;
+			});
+
+			//阻止右键事件发生
+			$('#pop').contextmenu(function() {
+			    return false;
+			});
+		});
+	</script>
+</head>
+<body>
+	<h1>首页标题</h1>
+	<p>页面类容</p>
+	<input type="button" name="" value="弹出" id="btn1">
+
+	<div class="pop_con" id="pop">
+		<div class="pop">
+			<h3>提示信息!!</h3>
+			<input type="text" name="" >
+			<input type="button" value="确认" id="btn2" class="btn">
+		</div>
+
+		<div class="mask"></div>
+	
+	</div>
+
+
+	
+
+
+</body>
+</html>

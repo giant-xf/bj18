@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<script type="text/javascript " src='js/jquery-1.12.4.min.js'></script>
+	<script type="text/javascript">
+		$(function(){
+
+			$('#btns input').click(function(){
+
+				$(this).addClass('cur').siblings().removeClass('cur');
+
+				//读取当前点击的按钮的索引值
+				// alert($(this).index())
+
+				$('#cons div').eq($(this).index()).addClass('active').siblings().removeClass('active');
+			});
+
+
+			$('#div1').css({textAlign:'center'});
+			$('#btn2').click(function(){
+				$('#div1').toggleClass('box1');
+
+			});
+
+		});
+		
+	</script>
+
+	<style type='text/css'>
+		.btns{
+			width: 500px;
+			height: 50px;
+		}
+
+		.btns input{
+			width: 100px;
+			height: 50px;
+			color: #666;
+			background-color: #ddd;
+			border: 0;
+
+		}
+
+		.btns input.cur{
+			background-color: gold;
+		}
+		
+		.cons div{
+			width: 500px;
+			height: 300px;
+			background-color: gold;
+			text-align: center;
+			line-height: 200px;
+			display: none;
+			margin-bottom: 20px;
+		}
+
+		.cons div.active{
+			display: block;
+		}
+
+		.box{
+			width: 100px;
+			height: 100px;
+			background-color: gold;
+			line-height: 100px;
+		}
+	
+		.box1{
+			width: 200px;
+			height: 200px;
+			background-color: red;
+			line-height: 200px;
+		}
+	</style>
+</head>
+<body>
+	<div id="btns" class="btns">
+		<input type="button" value="tab01"  class="cur">
+		<input type="button" value="tab02">
+		<input type="button" value="tab03">
+	</div>
+
+	<div id="cons" class="cons">
+		<div class="active">tab01内容</div>
+		<div>tab02内容</div>
+		<div>tab03内容</div>
+	</div>
+	<input type="button" value='切换' id="btn2">
+	<div class="box" id="div1">box</div>
+</body>
+</html>

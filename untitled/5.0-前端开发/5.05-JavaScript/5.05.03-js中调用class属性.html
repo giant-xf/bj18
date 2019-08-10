@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>js基础知识</title>
+	<style type="text/css">
+		body{
+			background-color: red;
+		}
+
+		.div1{
+			width: 200px;
+			height: 200px;
+			background-color: cyan;
+		}
+
+		.div2{
+			width: 300px;
+			height: 300px;
+			background-color: green;
+		}
+	</style>
+	
+	<script type="text/javascript">
+
+		window.onload = function (){
+			var oDiv = document.getElementById('div1');
+			oDiv.className = 'div2';
+		}
+
+	</script>
+
+</head>
+<body>
+	<div id="div1" class="div1"></div>
+</body>
+</html>

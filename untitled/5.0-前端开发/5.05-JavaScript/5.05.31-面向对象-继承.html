@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	
+	<script type="text/javascript">
+		function Fclass(name,age){
+			this.name = name;
+			this.age = age;
+		}
+
+		Fclass.prototype.showname = function(){
+			alert(this.name);
+		}
+		Fclass.prototype.showage= function(){
+			alert(this.age);
+		}
+
+		function Sclass(name,age,job){
+			//用来继承父类的属性
+			//call 方法和apply方法相似
+			//call(this,name,age);
+			//apply(this,[name,age]);
+			Fclass.call(this,name,age);
+			this.job = job;
+		}
+
+		//用来继承父类的方法
+		Sclass.prototype = new Fclass();
+		Sclass.prototype.showjob = function(){
+			alert(this.job);
+		}
+
+		var Tom = new Sclass('Tom',20,'全栈工程师');
+
+		Tom.showage();
+		Tom.showjob();
+		Tom.showname();
+		
+		
+	</script>
+
+</head>
+<body>
+	
+
+</body>
+</html>

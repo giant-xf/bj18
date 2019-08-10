@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>js中条件语句</title>
+	<style type="text/css">
+
+	</style>
+	<script type="text/javascript">
+
+		window.onload = function(){
+			
+			var oInput = document.getElementById('input');
+			var oBtn = document.getElementById('btn');
+
+			oBtn.onclick = function(){
+				// 将oInout.value转换成数字
+				var a = parseInt(oInput.value);
+				switch(a){
+					case 1:
+				        alert('语文');
+				        break;
+				    case 2:
+				        alert('数学');
+				        break;
+				    case 3:
+				        alert('英语');
+				        break;
+				    case 4:
+				        alert('美术');
+				        break;
+				    case 5:
+				        alert('舞蹈');
+				        break;
+				    default:
+				        alert('不补习');
+				}
+			}
+		}
+
+
+	</script>
+</head>
+<body>
+	<input type="text" name="" placeholder="请输入数字" id="input">
+	<input type="button" name="" value="查询" onclick="" id="btn">
+	<div id="div" title="" >这是一个div</div>
+	
+</body>
+</html>

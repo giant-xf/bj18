@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>广州市</title>
+</head>
+<body>
+<h1>当前市所在的省</h1>
+{{ parent.atitle }}
+<h1>当前市</h1>
+{{ area.atitle }}
+<h1>当前市所有的区</h1>
+<ul>
+    {% for childen in childen %}
+        <li>{{ childen.atitle }}</li>
+    {% empty %}
+        <li>当前省没有区</li>
+    {% endfor %}
+
+
+</ul>
+</body>
+</html>

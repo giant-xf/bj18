@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/../1.02-小白进阶篇之核心编程/.idea/1.02-小白进阶篇之核心编程.iml" filepath="$PROJECT_DIR$/../1.02-小白进阶篇之核心编程/.idea/1.02-小白进阶篇之核心编程.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../2.0-小白进阶篇/.idea/2.0-小白进阶篇.iml" filepath="$PROJECT_DIR$/../2.0-小白进阶篇/.idea/2.0-小白进阶篇.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/one.iml" filepath="$PROJECT_DIR$/.idea/one.iml" />
+    </modules>
+  </component>
+</project>

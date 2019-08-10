@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>js数组</title>
+	<script type="text/javascript">
+
+		var aRr1 = [1,2,3,2,3,4,6,4,7,6,8,0,8,9,5,6,5,4]
+
+		var aRr2 = [];
+
+		for(var i = 0; i < aRr1.length; i++){
+
+			if (aRr1.indexOf(aRr1[i])==i) {
+
+				aRr2.push(aRr1[i]);
+			}
+		}
+		var num;
+		//冒泡排序
+		for(var j = 0;j < aRr2.length;j++){
+			for( var k = j+1; k< aRr2.length;k++){
+				if (aRr2[j]>aRr2[k]) {
+					num = aRr2[j];
+					aRr2[j] = aRr2[k];
+					aRr2[k] = num;
+				}
+			}
+		}
+		alert(aRr2);
+
+
+
+
+	</script>
+</head>
+<body>
+
+	
+</body>
+</html>

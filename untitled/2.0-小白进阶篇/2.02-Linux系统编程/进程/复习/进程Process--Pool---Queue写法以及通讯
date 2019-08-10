@@ -1,0 +1,104 @@
+
+
+进程的创建
+1.os.fork()函数需要只在Linux中可用(不常用)
+
+2.Process()可用跨平台，
+   1. 普通方法调用
+   def test(num):
+       print("----%d----"%num)
+
+   if __name__ == "__main__":
+       p =Process(targer=test,name="feng",(i,))
+        #targer=：传入函数;
+        #(i,)传入参数，以数组的形式传入
+        #name=给进程添加一个名字
+       p.start()
+       p.join()#让父进程等待子进程运行完再执行
+
+   2.  重写run()方法
+   class Text(Process):
+       def __init__(self, name):
+           Process.__init__(self)
+           self.name = name
+
+       def run(self):
+           print("----name =%s---" % self.name)
+
+
+   if __name__ == "__main__":
+       p = Text("laowang")
+       p.start()
+       p.join
+
+
+3.进程池Pool
+    1.普通方法
+   def test(num):
+       print("----%d----"%num)
+   if __name__ =="__main__":
+        p =Pool(3)
+        for i in range(10):
+            print(i)
+            p.apply_async(test,(i,))  #非阻塞状态   ，apply为阻塞状态
+
+        p.close()
+        p.join()
+        print("-----over-----")
+
+
+进程之间的通讯(Queue(), Manager().Queue())
+(通讯的意义:使进程之间能够进行数据传递，
+
+1.Process()的通讯
+
+def write(q):
+    for i in range(10):
+        print("put %d to Queque"%i)
+        q.put(i)
+        time.sleep(1)
+
+
+def read(q):
+    while True:
+        if not q.empty():
+            values =q.get()
+            print("get %d"%values)
+
+        else:
+            break
+
+
+if __name__ == '__main__':
+    q =Queue()
+    pw = Process(target =write,args=(q,))
+    pr = Process(target =read,args=(q,))
+    pw.start()
+    pw.join()
+    pr.start()
+    pr.join()
+    print("")
+    print("数据读完")
+
+2.Pool()进程池中的通讯
+
+def reader(q):
+    #print("reader启动(%s),⽗进程为(%s)"%(os.getpid(),os.getppid()))
+    for i in range(q.qsize()):
+        print("reader从Queue获取到消息：%s"%q.get(True))
+def writer(q):
+    #print("writer启动(%s),⽗进程为(%s)"%(os.getpid(),os.getppid()))
+    for i in "dongGe":
+        q.put(i)
+        print(i)
+        time.sleep(1)
+if __name__=="__main__":
+    print("(%s) start"%os.getpid())
+    q=Manager().Queue() #使⽤Manager中的Queue来初始化
+    po=Pool()
+    #使⽤阻塞模式创建进程，这样就不需要在reader中使⽤死循环了，可以让writer完全执⾏完成后，再⽤reader去读取
+    po.apply(writer,(q,))
+    po.apply(reader,(q,))
+    po.close()
+    po.join()
+    print("(%s) End"%os.getpid())

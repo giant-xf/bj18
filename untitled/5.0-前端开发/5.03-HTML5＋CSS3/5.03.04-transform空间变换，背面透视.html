@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>transition-旋转</title>
+    <style type="text/css">
+        .box{
+            width: 200px;
+            height: 200px;
+            text-align: center;
+            line-height: 200px;
+            color: #f7f7f7;
+            background-color: gold;
+            float: left;
+            /*margin: 50px auto 0;*/
+            margin: 50px 25px;
+            transition: all 0.5s ease;
+            transform: rotateX(0deg);
+            transform-style: preserve-3d;
+        }
+
+        .box:hover{
+            /*向X,Y,Z方向旋转*/
+            transform: perspective(800px) rotateX(75deg);
+        }
+
+
+        .box2{
+            width: 200px;
+            height: 200px;
+            text-align: center;
+            line-height: 200px;
+            color: #f7f7f7;
+            background-color: gold;
+            float: left;
+            /*margin: 50px auto 0;*/
+            margin: 50px 25px;
+            transition: all 0.5s ease;
+            transform: translateZ(0px);
+            transform-style: preserve-3d;
+        }
+
+        .box2:hover{
+            /*向X，Y，Z轴方向移动*/
+            transform: perspective(800px) translateZ(300px);
+        }
+
+        .box3{
+            width: 200px;
+            height: 200px;
+            text-align: center;
+            line-height: 200px;
+            color: #f7f7f7;
+            background-color: gold;
+            float: left;
+            /*margin: 50px auto 0;*/
+            margin: 50px 25px;
+            transition: all 1s ease;
+            transform: translateZ(0px);
+            transform-style: preserve-3d;
+            transform-origin: left center;
+        }
+
+        .box3:hover{
+            /*在这里写旋转点和在上面写是有区别的
+            这里会出现旋转点在移动*/
+            /*transform-origin: left center;*/
+
+            /*transform: perspective(800px) rotateX(45deg);*/
+            transform: rotate(90deg);
+        }
+
+        .box4{
+            width: 200px;
+            height: 200px;
+            text-align: center;
+            line-height: 200px;
+            color: #f7f7f7;
+            background-color: gold;
+            float: left;
+            /*margin: 50px auto 0;*/
+            margin: 50px 25px;
+            transition: all 2s ease;
+            transform: translateZ(0px);
+            transform-style: preserve-3d;
+            transform-origin: left center;
+        }
+
+        /*用nth-child(n)进行定位元素块*/
+        div:nth-child(4){
+            transform-origin: right top;
+        }
+
+        div:hover{
+            transform: rotate(90deg);
+        }
+
+        .box5{
+            width: 200px;
+            height: 200px;
+            text-align: center;
+            line-height: 200px;
+            color: #f7f7f7;
+            background-color: gold;
+            float: left;
+            /*margin: 50px auto 0;*/
+            margin: 50px 25px;
+            transition: all 1s ease;
+            transform: perspective(800px) rotate(0deg);;
+            transform-style: preserve-3d;
+            backface-visibility: hidden;
+        }
+
+        .box5:hover{
+            transform: perspective(800px) rotateY(180deg);
+        }
+
+
+
+    </style>
+</head>
+<body>
+    <div class="box">三维翻转</div>
+    <div class="box2">三维移动</div>
+    <div class="box3">旋转</div>
+    <div class="box4">旋转</div>
+    <div class="box5">背面透明</div>
+</body>
+</html>

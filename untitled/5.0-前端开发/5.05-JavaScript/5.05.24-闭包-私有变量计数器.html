@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<script type="text/javascript">
+	window.onload = function(){
+
+
+		//闭包用途：
+		//2、私有变量计数器，外部无法访问，避免全局变量的污染
+		var count = (function(){
+			var a =0;
+
+			function add(){
+				a++
+				return a;
+			}
+			return add;
+		})();
+
+		alert(count());
+		alert(count());
+
+	}	
+
+
+	</script>
+</head>
+<body>
+	
+</body>
+</html>

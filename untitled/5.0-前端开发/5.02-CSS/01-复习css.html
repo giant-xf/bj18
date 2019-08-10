@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>复习css</title>
+	<style type="text/css">
+		p{
+			/*去掉p标签自带的margin*/
+			margin: 0;
+		}
+
+		.xieti{
+			font-style: normal;
+		}
+
+		.jiacu{
+			font-weight: normal;
+		}
+		
+		.xiahuaxian{
+			text-decoration: none;
+		}
+
+		.xuhao{
+			list-style: none;
+		}
+
+		.box,.box2,.box3{
+			width: 200px;
+			height: 100px;
+			background-color: gold;
+			/*margin: 10px auto 0;*/
+			margin: 10px;
+			border:solid 1px #000;
+			padding: 10px ;
+			overflow: hidden;
+		}
+
+		.box p{
+			font:15px/15px 'Microsoft Yahei';
+			text-indent: 30px;
+		}
+		
+		.menu{
+			width: 694px;
+			height: 50px;
+			margin: 50 auto 0;
+			list-style: none;
+			font-size: 0;
+		}
+
+		.menu li{
+			display: inline-block;
+			width: 98px;
+			height: 48px;
+			border:solid 1px gold;
+			font-size: 16px;
+			margin-right: -1px;
+			text-align: center;
+			line-height: 50px;
+		}
+
+		.menu li a{
+			font-family:"Microsoft Yahei";
+			color: pink;
+			text-decoration:none;
+		}
+
+		.menu li:hover{
+			background-color: red;
+			border:2px solid pink;
+		}
+
+	</style>
+</head>
+<body>
+	<em class="xieti">斜体字</em>
+	<h1 class="jiacu">加粗字体</h1>
+	<a href="#" class="xiahuaxian">下划线字体</a>
+	<li class="xuhao">有序号的字体</li>
+	
+	<div class="box"><p>设置其它三个边的方法和上面一样，把上面的'top'换成'left'就是设置左边，换成'right'就是设置右边，换成'bottom'就是设置底边。
+四个边如果设置一样，可以将四个边的设置合并成一句</p></div>
+	<div class="box2"><p>hahahahahah</p></div>
+	<div class="box3"><p>hahahahahah</p></div>
+	
+
+	<div class="menu">
+	    <li><a href="">首页</a></li>
+	    <li><a href="">公司简介</a></li>
+	    <li><a href="">公司简介</a></li>
+	    <li><a href="">公司简介</a></li>
+	    <li><a href="">公司简介</a></li>
+	    <li><a href="">公司简介</a></li>
+	    <li><a href="">公司简介</a></li>
+
+
+	</div>
+
+
+
+
+
+
+</body>
+</html>

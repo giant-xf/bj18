@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>animation动画</title>
+    <style type="text/css">
+        
+        .box{
+            width: 100px;
+            height: 100px;
+            background-color: gold;
+            float: left;
+            text-align: center;
+            font-size: 13px;
+            color: #f7f7f7;
+            line-height: 100px;
+            animation: move 1s ease infinite alternate ;
+            animation-play-state:paused;
+        }
+
+        .box:hover{
+            animation-play-state: running;
+        }
+
+
+        .box2{
+            width: 100px;
+            height: 100px;
+            background-color: gold;
+            float: left;
+            text-align: center;
+            font-size: 13px;
+            color: #f7f7f7;
+            line-height: 100px;
+            animation: moving 1s ease both;
+            /*animation-play-state:paused;*/
+        }
+
+
+        @keyframes move {
+            from{
+                width: 100px;
+            }
+
+            to{
+                width: 500px;
+            }
+
+        }
+        
+        @keyframes moving {
+            0%{
+                transform: translateY(0px);
+            }
+
+            20%{
+                transform: translateY(0px);
+            }
+
+            50%{
+                transform: translateY(500px);
+                background-color: gold;
+                border-radius: 0px;
+            }
+
+            51%{
+                transform: translateY(500px);
+                background-color: red;
+                border-radius: 50px;
+            }
+
+            80%{
+                transform: translateY(0px);
+                background-color: red;
+                border-radius: 50%;
+            }
+
+            100%{
+                transform: translateY(0px);
+                background-color: red;
+                border-radius: 50%;
+            }
+
+        }
+        
+        
+        
+        
+        
+    </style>
+</head>
+<body>
+    <div class="box">animation动画</div>
+
+    <div class="box2">弹跳</div>
+</body>
+</html>

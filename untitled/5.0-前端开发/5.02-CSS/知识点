@@ -1,0 +1,364 @@
+2.1基本语法及页面引用
+css基本语法
+css的定义方法是：
+
+选择器 { 属性:值; 属性:值; 属性:值;}
+
+选择器是将样式和页面元素关联起来的名称，属性是希望设置的样式属性每个属性有一个或多个值。代码示例：
+
+div{ width:100px; height:100px; color:red }
+css页面引入方法：
+1、外联式：通过link标签，链接到外部样式表到页面中。
+
+<link rel="stylesheet" type="text/css" href="css/main.css">
+2、嵌入式：通过style标签，在网页上创建嵌入的样式表。
+
+<style type="text/css">
+    div{ width:100px; height:100px; color:red }
+    ......
+</style>
+3、内联式：通过标签的style属性，在标签上直接写样式。
+
+<div style="width:100px; height:100px; color:red ">......</div>
+
+2.2 css文本设置
+常用的应用文本的css样式：
+
+color 设置文字的颜色，如： color:red;
+
+font-size 设置文字的大小，如：font-size:12px;
+font-family 设置文字的字体，如：font-family:'微软雅黑';
+font-style 设置字体是否倾斜，如：font-style:'normal'; 设置不倾斜，font-style:'italic';设置文字倾斜
+font-weight 设置文字是否加粗，如：font-weight:bold; 设置加粗 font-weight:normal 设置不加粗
+font 同时设置文字的几个属性，写的顺序有兼容问题，建议按照如下顺序写： font：是否加粗 字号/行高 字体；如： font:normal 12px/36px '微软雅黑';
+line-height 设置文字的行高，如：line-height:24px;
+text-indent 设置文字首行缩进，如：text-indent:24px; 设置文字首行缩进24px
+text-align 设置文字水平对齐方式，如text-align:center 设置文字水平居中
+text-decoration 设置文字的下划线，如：text-decoration:none; 将文字下划线去掉
+
+opacity: 0.5;   /*调整透明度*/
+list-style-type: none;    /*去掉ul里面序号前面的点*/
+cursor: pointer;  将鼠标箭头变成手指形状
+display: none;   /*让字隐藏*/
+border: 1px solid gold;    /*使鼠标放在图片链接上面有反应*/
+border-radius: 50%;    /*将方块变成圆*/
+overflow: hidden;    /*切掉多出的线*/  
+overflow-x:hidden	/*切掉左右的内容，不出现滚动条*/
+overflow-y:auto     /*不切掉上下内容，让出上下的滚动条*/
+（overflow: hidden;
+white-space: nowrap;   
+text-overflow: ellipsis;）  /*可以设置放不下的字体为省略号*/
+z-index:9999 	/*设置权值定位，让某个页面盖过某个页面*/
+
+
+2.3 css颜色表示法
+css颜色值主要有三种表示方法：
+1、颜色名表示，比如：red 红色，gold 金色
+2、rgb表示，比如：rgb(255,0,0)表示红色
+3、16进制数值表示，比如：#ff0000 表示红色，这种可以简写成 #f00
+
+overflow的设置项： 
+1、visible 默认值。内容不会被修剪，会呈现在元素框之外。
+2、hidden 内容会被修剪，并且其余内容是不可见的，此属性还有清除浮动、清除margin-top塌陷的功能。
+3、scroll 内容会被修剪，但是浏览器会显示滚动条以便查看其余的内容。
+4、auto 如果内容被修剪，则浏览器会显示滚动条以便查看其余的内容。
+5、inherit 规定应该从父元素继承 overflow 属性的值
+
+
+块元素 
+块元素，也可以称为行元素，布局中常用的标签如：div、p、ul、li、h1~h6、
+dl、dt、dd等等都是块元素，它在布局中的行为：
+支持全部的样式
+如果没有设置宽度，默认的宽度为父级宽度100%
+盒子占据一行、即使设置了宽度
+
+
+内联元素
+内联元素，也可以称为行内元素，布局中常用的标签如：a、span、em、b、
+strong、i等等都是内联元素，它们在布局中的行为：
+支持部分样式（不支持宽、高、margin上下、padding上下）
+宽高由内容决定
+盒子并在一行
+代码换行，盒子之间会产生间距
+子元素是内联元素，父元素可以用text-align属性设置子元素水平对齐方式，
+用line-height属性值设置垂直对齐方式
+
+解决内联元素间隙的方法 
+1、去掉内联元素之间的换行
+2、将内联元素的父级设置font-size为0，内联元素自身再设置font-size
+
+内联块元素
+内联块元素，也叫行内块元素，是新增的元素类型，现有元素没有归于此
+类别的，img和input元素的行为类似这种元素，但是也归类于内联元素，
+我们可以用display属性将块元素或者内联元素转化成这种元素。它们在布局
+中表现的行为：
+支持全部样式
+如果没有设置宽高，宽高由内容决定
+盒子并在一行
+代码换行，盒子会产生间距
+子元素是内联块元素，父元素可以用text-align属性设置子元素水平对齐方式，
+用line-height属性值设置子元素垂直对齐方式
+
+
+
+display属性
+display属性是用来设置元素的类型及隐藏的，常用的属性有：
+1、none 元素隐藏且不占位置
+2、block 元素以块元素显示
+3、inline 元素以内联元素显示
+4、inline-block 元素以内联块元素显示
+
+
+CSS3 transition动画
+1、transition-property 设置过渡的属性，比如：width height background-color
+2、transition-duration 设置过渡的时间，比如：1s 500ms
+3、transition-timing-function 设置过渡的运动方式
+linear 匀速
+ease 开始和结束慢速
+ease-in 开始是慢速
+ease-out 结束时慢速
+ease-in-out 开始和结束时慢速
+cubic-bezier(n,n,n,n)
+比如：cubic-bezier(0.845, -0.375, 0.215, 1.335)
+曲线设置网站：https://matthewlein.com/ceaser/
+4、transition-delay 设置动画的延迟
+5、transition: property duration timing-function delay 同时设置四个属性
+
+
+
+CSS3 transform变换
+1、translate(x,y) 设置盒子位移
+2、scale(x,y) 设置盒子缩放
+3、rotate(deg) 设置盒子旋转
+4、skew(x-angle,y-angle) 设置盒子斜切
+5、perspective 设置透视距离
+6、transform-style flat | preserve-3d 设置盒子是否按3d空间显示
+7、translateX、translateY、translateZ 设置三维移动
+8、rotateX、rotateY、rotateZ 设置三维旋转
+9、scaleX、scaleY、scaleZ 设置三维缩放
+10、tranform-origin 设置变形的中心点
+11、backface-visibility 设置盒子背面是否可见
+
+CSS3 animation动画
+1、@keyframes 定义关键帧动画
+2、animation-name 动画名称
+3、animation-duration 动画时间
+4、animation-timing-function 动画曲线
+linear 匀速
+ease 开始和结束慢速
+ease-in 开始是慢速
+ease-out 结束时慢速
+ease-in-out 开始和结束时慢速
+steps 动画步数
+5、animation-delay 动画延迟
+6、animation-iteration-count 动画播放次数 n|infinite
+7、animation-direction
+
+normal 默认动画结束不返回
+Alternate 动画结束后返回
+8、animation-play-state 动画状态
+
+paused 停止
+running 运动
+9、animation-fill-mode 动画前后的状态
+
+none 不改变默认行为
+forwards 当动画完成后，保持最后一个属性值（在最后一个关键帧中定义）
+backwards 在 animation-delay 所指定的一段时间内，在动画显示之前，应用开始属性值（在第一个关键帧中定义）
+both 向前和向后填充模式都被应用
+10、animation:name duration timing-function delay iteration-count direction;同时设置多个属性
+
+
+
+
+
+
+HTML5 新增表单控件
+新增类型：网址 邮箱 日期 时间 星期 数量 范围 电话 颜色 搜索
+<label>网址:</label><input type="url" name="" required><br><br> 
+<label>邮箱:</label><input type="email" name="" required><br><br> 
+<label>日期:</label><input type="date" name=""><br><br> 
+<label>时间:</label><input type="time" name=""><br><br> 
+<label>星期:</label><input type="week" name=""><br><br> 
+<label>数量:</label><input type="number" name=""> <br><br>
+<label>范围:</label><input type="range" name=""><br><br> 
+<label>电话:</label><input type="tel" name=""><br><br> 
+<label>颜色:</label><input type="color" name=""><br><br> 
+<label>搜索:</label><input type="search" name=""><br><br>
+新增常用表单控件属性：
+1、placeholder 设置文本框默认提示文字
+2、autofocus 自动获得焦点
+3、autocomplete 联想关键词
+
+
+
+
+
+HTML5 音频和视频
+audio标签 
+支持格式：ogg、wav、mp3
+
+对应属性：
+1、autoplay 自动播放
+2、controls 显示播放器
+3、loop 循环播放
+4、preload 预加载
+5、muted 静音
+
+video标签 
+支持格式：ogg、mp4、webM
+
+属性：
+1、width
+2、height
+3、Poster
+
+可选第三方播放器：
+1、cyberplayer
+2、tencentPlayer
+3、youkuplayer
+
+
+
+
+PC及移动端页面适配方法
+设备屏幕有多种不同的分辨率，页面适配方案有如下几种：
+
+1、全适配：流体布局+响应式布局
+2、移动端适配：
+
+流体布局+少量响应式
+基于rem的布局
+弹性盒模型
+
+
+流体布局
+流体布局，就是使用百分比来设置元素的宽度，元素的高度按实际高度写固定值，流体布局中，元素的边线无法用百分比，可以使用样式中的计算函数 calc() 来设置宽度，或者使用 box-sizing 属性将盒子设置为从边线计算盒子尺寸。
+
+calc() 
+可以通过计算的方式给元素加尺寸，比如： width：calc(25% - 4px);
+
+box-sizing 
+1、content-box 默认的盒子尺寸计算方式
+2、border-box 置盒子的尺寸计算方式为从边框开始，盒子的尺寸，边框和内填充算在盒子尺寸内
+
+响应式布局
+响应式布局就是使用媒体查询的方式，通过查询浏览器宽度，不同的宽度应用不同的样式块，每个样式块对应的是该宽度下的布局方式，从而实现响应式布局。响应式布局的页面可以适配多种终端屏幕（pc、平板、手机）。
+
+相应布局的伪代码如下：
+
+@media (max-width:960px){
+    .left_con{width:58%;}
+    .right_con{width:38%;}
+}
+@media (max-width:768px){
+    .left_con{width:100%;}
+    .right_con{width:100%;}
+}
+
+
+
+
+基于rem的布局
+首先了解em单位，em单位是参照元素自身的文字大小来设置尺寸，rem指的是参照根节点的文字大小，根节点指的是html标签，设置html标签的文字大小，其他的元素相关尺寸设置用rem，这样，所有元素都有了统一的参照标准，改变html文字的大小，就会改变所有元素用rem设置的尺寸大小。
+
+cssrem安装
+cssrem插件可以动态地将px尺寸换算成rem尺寸
+下载本项目，比如：git clone https://github.com/flashlizi/cssrem 进入
+packages目录：Sublime Text -> Preferences -> Browse Packages... 复制
+下载的cssrem目录到刚才的packges目录里。 重启Sublime Text。
+配置参数 参数配置文件：Sublime Text -> Preferences -> Package Settings
+-> cssrem px_to_rem - px转rem的单位比例，默认为40。
+max_rem_fraction_length - px转rem的小数部分的最大长度。默认为6。 
+available_file_types - 启用此插件的文件类型。
+默认为：[".css", ".less", ".sass"]。
+
+
+
+
+
+弹性盒模型布局
+1、容器属性
+display : flex
+声明使用弹性盒布局
+
+flex-direction : 
+row 	/*默认子元素水平靠左排*/ 
+row-reverse 	/*子元素水平靠右倒序排*/ 
+column 	/*竖排*/ 
+column-reverse 		/*倒序竖排*/
+确定子元素排列的方向
+
+flex-wrap : 
+nowrap    /*默认值，子元素宽度超过父级宽度时不换行*/*/
+wrap 	/*子元素宽度超过父级宽度时换行*/
+wrap-reverse	/*子元素宽度超过父级宽度时换行且倒序排列*/
+元素超过父容器尺寸时是否换行
+
+flex-flow : flex-direction | flex-wrap
+同时设置flex-direction 和 flex-wrap
+
+justify-content : 
+flex-start 		/*整体子元素靠左*/
+flex-end 		/*整体子元素靠右*/
+center 			/*整体子元素居中*/
+space-between 	/*第一个子元素靠左顶格，最后一个子元素靠右顶格，中间的元素等分距*/
+space-around	/*第一个子元素靠左间距和最后一个子元素靠右间距是中间子元素间距的一半，中间的子元素等分间距*/
+子元素的尺寸确定之后，用此属性来设置flex-direction定义方向上的分布方式
+
+align-items : 
+flex-start 		/*整体垂直靠上 */
+flex-end 		/*整体垂直靠下*/
+center 			/*整体垂直居中*/
+baseline 		/*元素内的文字底部对齐，若文字大小不同，导致子元素水平不对齐*/
+stretch			/*若子元素不设置高度，高度被拉伸到和父元素高度相同，需除去自身的margin*/
+子元素的尺寸确定之后，用此属性来设置flex-direction定义方向上的垂直方向的分布方式
+
+align-content : 
+flex-start 		/*多行整体靠上*/
+flex-end 		/*多行整体靠下*/
+center 			/*多行整体垂直居中排列*/
+space-between 	/*第一行子元素靠上顶格，最后一行子元素靠下顶格，中间子元素等分垂直间距*/
+space-around 	/*第一行子元素靠上间距和最后一行子元素间距是中间行子元素垂直间距的一半*/
+stretch			/**/
+设置多行子元素在行方向上的对齐方式
+
+2、条目属性
+flex : none | <' flex-grow '> <' flex-shrink >'? || <' flex-basis '>
+同时设置flex-grow 和 flex-shrink 以及 flex-basis
+
+flex-grow ： number		/*当有多余的宽度时，每个子元素增长的宽度比例*/
+表示的是当父元素有多余的空间时，这些空间在不同子元素之间的分配比例
+
+flex-shrink： number  /*当宽度不够时，每个子元素减少宽度比例*/
+当父元素的空间不足时，各个子元素的尺寸缩小的比例
+
+flex-basis ：length | percentage | auto | content  /*给2号一个基础的大小*/
+用来确定弹性条目的初始主轴尺寸。
+
+align-self ：auto | flex-start | flex-end | center | baseline | stretch
+覆写父元素指定的对齐方式
+
+order : integer  /*改变2号元素的排列位置顺序*/
+ul li:nth-child(2){
+			order: 1;
+		}
+改变条目在容器中的出现顺序
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

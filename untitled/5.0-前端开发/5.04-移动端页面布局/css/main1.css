@@ -1,0 +1,42 @@
+body{
+            margin: 0;
+            padding: 0;
+        }
+
+
+        .main_wrap{
+            position: absolute;
+            left: 0;
+            right: 0;
+            top: 0;
+            bottom: 0;
+            background-color: gold;
+        }
+
+        .header{
+            background-color: #4ab14e;
+            height: 50px;
+        }
+
+        .center_wrap{
+            position: absolute;
+            top: 50px;
+            bottom: 50px;
+            right: 0;
+            left: 0;
+            background-color:cyan;
+            overflow-x: hidden;
+            overflow-y: auto;
+
+        }
+
+        .footer{
+            position: absolute;
+            height: 50px;
+            width: 100%;
+            background-color: #fff;
+            left: 0;
+            right: 0;
+            bottom: 0;
+
+        }

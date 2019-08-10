@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>js基础知识</title>
+	<script type="text/javascript">
+		 //同时定义多个变量可以用","隔开，公用一个‘var’关键字
+		/*var c = 45,d='qwe',f='68';
+		var a = '您好';
+		alert(a);*/
+
+		window.onload = function function_name(argument) {
+
+			var oDiv1 = document.getElementById('div1');
+			oDiv1.title = '6666';
+			oDiv1.style.backgroundColor = 'red';
+
+			var oDiv2 = document.getElementById('div2');
+			oDiv2.title = '跳转到百度网';
+			oDiv2.style.textDecoration = "none";
+			oDiv2.href = 'http://www.baidu.com';
+		}
+
+
+	</script>
+</head>
+<body>
+	<div id="div1" title="这是隐藏属性" >这是一个div</div>
+	<a href="#" id="div2">百度网</a>
+	
+</body>
+</html>

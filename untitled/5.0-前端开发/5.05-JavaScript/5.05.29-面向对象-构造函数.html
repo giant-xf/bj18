@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	
+	<script type="text/javascript">
+		function Person(name,age,job){
+
+			this.name = name;
+			this.age = age;
+			this.job = job
+
+			this.showname = function(){
+				alert(this.name);
+			}
+
+			this.showage = function(){
+				alert(this.age);
+			}
+
+			this.showjob = function(){
+				alert(this.job);
+			}
+		}
+
+		var Tom = new Person('tom',18,'程序员');
+		var Jack = new Person('Jack',20,'销售');
+		Tom.showjob();
+		Jack.showjob();
+		/*
+		alert(Tom.showjob)
+		弹出的是个匿名函数:
+		function(){
+				alert(this.job);
+			}
+		*/
+	
+		//弹出false;说明两个方法不等，分别是两个不同的，所以更加消耗内存
+		alert(Tom.showjob == Jack.showjob)
+		
+	</script>
+
+</head>
+<body>
+	
+
+</body>
+</html>

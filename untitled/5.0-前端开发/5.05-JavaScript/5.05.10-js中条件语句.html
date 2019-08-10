@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>js中条件语句</title>
+	<style type="text/css">
+		div{
+			width: 200px;
+			height: 300px;
+			background-color: gold;
+		}
+	
+	</style>
+	<script type="text/javascript">
+
+		window.onload = function(){
+			var oDiv = document.getElementById('div');
+			var oBtn = document.getElementById('btn');
+
+			oBtn.onclick = function(){
+				if (oDiv.style.display == 'block'||oDiv.style.display == ''){
+					oDiv.style.display = 'none';
+				}
+				else{
+					oDiv.style.display = 'block';
+				}
+			}
+
+
+		}
+
+
+
+	</script>
+</head>
+<body>
+	<input type="button" name="" value="切换" onclick="" id="btn">
+	<div id="div" title="" >这是一个div</div>
+	
+</body>
+</html>
